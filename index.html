@@ -1,1954 +1,229 @@
-
-
 <!DOCTYPE html>
-<html lang="vi" xml:lang="vi" xmlns="http://www.w3.org/1999/xhtml">
-<head><title>
-	Source code web HTML CSS Javascript giao diện website book tour du lịch TOUR-TRAVEL Website
-</title><link rel="shortcut icon" href="/assets/images/sharecode.ico" type="image/x-icon" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="robots" content="noodp,index,follow" /><meta name="revisit-after" content="1 days" /><meta content="sharecode.vn" name="author" /><meta content="Global" name="distribution" /><meta content="sharecode.vn" name="copyright" /><meta name="dc.creator" content="ShareCode" /><meta name="generator" content="Sharecode.vn" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="twitter:card" value="summary" /><meta property="og:site_name" content="Sharecode.vn" /><link rel="stylesheet" type="text/css" href="/assets/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" type="text/css" href="/assets/lib/font-awesome/css/font-awesome.min.css" /><link rel="stylesheet" type="text/css" href="/assets/lib/select2/css/select2.min.css" /><link rel="stylesheet" type="text/css" href="/assets/lib/owl.carousel/owl.carousel.css" /><link rel="stylesheet" type="text/css" href="/assets/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="/assets/css/animate.css" /><link rel="stylesheet" type="text/css" href="/assets/css/reset.css" /><link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
-    
-    <meta property="og:type" content="article" />
-
-<link rel="stylesheet" type="text/css" href="/assets/css/responsive.css" /><link href="https://sharecode.vn/source-code/source-code-web-html-css-javascript-giao-dien-website-book-tour-du-lich-tourtravel-website-29424.htm" rel="canonical" /><meta name="keywords" content="Code web,Source code web,Share code,Website du lịch,giao diện web,Source website" /><meta name="description" content="Source code html css được mình code thuần lại, để mọi người tham khảo và dùng để làm đồ án." /><meta property="og:title" content="Source code web HTML CSS Javascript giao diện website book tour du lịch TOUR-TRAVEL Website | Sharecode.vn" /><meta property="og:description" content="Source code html css được mình code thuần lại, để mọi người tham khảo và dùng để làm đồ án." /><meta property="og:url" content="https://sharecode.vn/source-code/source-code-web-html-css-javascript-giao-dien-website-book-tour-du-lich-tourtravel-website-29424.htm" /><meta property="og:image" content="https://sharecode.vn/FilesUpload/Code/source-code-web-html-css-javascript-giao-dien-website-book-tour-du-lich-tour-travel-website-15452.jpg" /><meta property="og:article:ublished-time" content="16/09/2021" /></head>
-<body class="category-page">
-    
-    <div id="fb-root"></div>
-    <background>:green;
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '1938824166400762',
-                cookie: true,
-                xfbml: true,
-                version: 'v2.8'
-            });
-            FB.AppEvents.logPageView();
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) { return; }
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <form method="post" action="/source-code/source-code-web-html-css-javascript-giao-dien-website-book-tour-du-lich-tourtravel-website-29424.htm" id="form1">
-<div class="aspNetHidden">
-<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjA4OTYyMTE1OQ9kFgJmD2QWAmYPZBYCAgEPFgIeBmFjdGlvbgVxL3NvdXJjZS1jb2RlL3NvdXJjZS1jb2RlLXdlYi1odG1sLWNzcy1qYXZhc2NyaXB0LWdpYW8tZGllbi13ZWJzaXRlLWJvb2stdG91ci1kdS1saWNoLXRvdXJ0cmF2ZWwtd2Vic2l0ZS0yOTQyNC5odG0WDAICDxYCHgdWaXNpYmxlaGQCAw8WAh8BaGQCBQ9kFgICAw8WAh4LXyFJdGVtQ291bnQCDxYeZg9kFgJmDxUCAjE1B0FuZHJvaWRkAgEPZBYCZg8VAgIyMwNpT1NkAgIPZBYCZg8VAgIyNg1XaW5kb3dzIHBob25lZAIDD2QWAmYPFQICMjELUEhQICYgTXlTUUxkAgQPZBYCZg8VAgIyOQlXb3JkUHJlc3NkAgUPZBYCZg8VAgIyOAZKb29tbGFkAgYPZBYCZg8VAgIxNwlWaXN1YWwgQyNkAgcPZBYCZg8VAgIxNgtBc3AvQXNwLk5ldGQCCA9kFgJmDxUCAjIwCEphdmEvSlNQZAIJD2QWAmYPFQICMTkMVmlzdWFsIEJhc2ljZAIKD2QWAmYPFQICMjQHQ29jb3MyRGQCCw9kFgJmDxUCAjI3BVVuaXR5ZAIMD2QWAmYPFQICMTgKVmlzdWFsIEMrK2QCDQ9kFgJmDxUCAjI1D0h0bWwgJiBUZW1wbGF0ZWQCDg9kFgJmDxUCAjIyBUtow6FjZAIHDxYCHwICBBYIZg9kFgJmDxUCInRoZS1sb2FpLXNvdXJjZS1jb2RlL3dlYnNpdGUtMS5odG0HV2Vic2l0ZWQCAQ9kFgJmDxUCLHRoZS1sb2FpLXNvdXJjZS1jb2RlL3BoYW4tbWVtLXVuZy1kdW5nLTIuaHRtG1Bo4bqnbiBt4buBbSAtIOG7qG5nIGThu6VuZ2QCAg9kFgJmDxUCH3RoZS1sb2FpLXNvdXJjZS1jb2RlL2dhbWUtMy5odG0ER2FtZWQCAw9kFgJmDxUCH3RoZS1sb2FpLXNvdXJjZS1jb2RlL2toYWMtNC5odG0FS2jDoWNkAggPFgIfAgIPFh5mD2QWAmYPFQQAIi9uZ29uLW5ndS1sYXAtdHJpbmgvYW5kcm9pZC0xNS5odG0HQW5kcm9pZAdBbmRyb2lkZAIBD2QWAmYPFQQAHi9uZ29uLW5ndS1sYXAtdHJpbmgvaW9zLTIzLmh0bQNpT1MDaU9TZAICD2QWAmYPFQQAKC9uZ29uLW5ndS1sYXAtdHJpbmgvd2luZG93cy1waG9uZS0yNi5odG0NV2luZG93cyBwaG9uZQ1XaW5kb3dzIHBob25lZAIDD2QWAmYPFQQAJC9uZ29uLW5ndS1sYXAtdHJpbmgvcGhwLW15c3FsLTIxLmh0bQtQSFAgJiBNeVNRTAtQSFAgJiBNeVNRTGQCBA9kFgJmDxUEACQvbmdvbi1uZ3UtbGFwLXRyaW5oL3dvcmRwcmVzcy0yOS5odG0JV29yZFByZXNzCVdvcmRQcmVzc2QCBQ9kFgJmDxUEACEvbmdvbi1uZ3UtbGFwLXRyaW5oL2pvb21sYS0yOC5odG0GSm9vbWxhBkpvb21sYWQCBg9kFgJmDxUEACMvbmdvbi1uZ3UtbGFwLXRyaW5oL3Zpc3VhbC1jLTE3Lmh0bQlWaXN1YWwgQyMJVmlzdWFsIEMjZAIHD2QWAmYPFQQAJC9uZ29uLW5ndS1sYXAtdHJpbmgvYXNwYXNwbmV0LTE2Lmh0bQtBc3AvQXNwLk5ldAtBc3AvQXNwLk5ldGQCCA9kFgJmDxUEACIvbmdvbi1uZ3UtbGFwLXRyaW5oL2phdmFqc3AtMjAuaHRtCEphdmEvSlNQCEphdmEvSlNQZAIJD2QWAmYPFQQAJy9uZ29uLW5ndS1sYXAtdHJpbmgvdmlzdWFsLWJhc2ljLTE5Lmh0bQxWaXN1YWwgQmFzaWMMVmlzdWFsIEJhc2ljZAIKD2QWAmYPFQQPY2F0LWxpbmstb3J0aGVyIi9uZ29uLW5ndS1sYXAtdHJpbmgvY29jb3MyZC0yNC5odG0HQ29jb3MyRAdDb2NvczJEZAILD2QWAmYPFQQPY2F0LWxpbmstb3J0aGVyIC9uZ29uLW5ndS1sYXAtdHJpbmgvdW5pdHktMjcuaHRtBVVuaXR5BVVuaXR5ZAIMD2QWAmYPFQQPY2F0LWxpbmstb3J0aGVyIy9uZ29uLW5ndS1sYXAtdHJpbmgvdmlzdWFsLWMtMTguaHRtClZpc3VhbCBDKysKVmlzdWFsIEMrK2QCDQ9kFgJmDxUED2NhdC1saW5rLW9ydGhlcigvbmdvbi1uZ3UtbGFwLXRyaW5oL2h0bWwtdGVtcGxhdGUtMjUuaHRtD0h0bWwgJiBUZW1wbGF0ZQ9IdG1sICYgVGVtcGxhdGVkAg4PZBYCZg8VBA9jYXQtbGluay1vcnRoZXIfL25nb24tbmd1LWxhcC10cmluaC9raGFjLTIyLmh0bQVLaMOhYwVLaMOhY2QCCg9kFgQCAQ9kFgYCAQ8WBB4EaHJlZgUoL25nb24tbmd1LWxhcC10cmluaC9odG1sLXRlbXBsYXRlLTI1Lmh0bR4FdGl0bGUFGkRhbmggbeG7pWMgSHRtbCAmIFRlbXBsYXRlZAIDDxYEHwMFIy90aGUtbG9haS1zb3VyY2UtY29kZS93ZWJzaXRlLTEuaHRtHwQFFFRo4buDIGxv4bqhaSBXZWJzaXRlZAIFDxYCHwMFcS9zb3VyY2UtY29kZS9zb3VyY2UtY29kZS13ZWItaHRtbC1jc3MtamF2YXNjcmlwdC1naWFvLWRpZW4td2Vic2l0ZS1ib29rLXRvdXItZHUtbGljaC10b3VydHJhdmVsLXdlYnNpdGUtMjk0MjQuaHRtFgICAQ8WAh4JaW5uZXJodG1sBV9Tb3VyY2UgY29kZSB3ZWIgSFRNTCBDU1MgSmF2YXNjcmlwdCBnaWFvIGRp4buHbiB3ZWJzaXRlIGJvb2sgdG91ciBkdSBs4buLY2ggVE9VUi1UUkFWRUwgV2Vic2l0ZWQCAw9kFhJmDxYCHwFoZAIBD2QWAmYPZBZYZg8PFgYeCEltYWdlVXJsBXcvRmlsZXNVcGxvYWQvQ29kZS9zb3VyY2UtY29kZS13ZWItaHRtbC1jc3MtamF2YXNjcmlwdC1naWFvLWRpZW4td2Vic2l0ZS1ib29rLXRvdXItZHUtbGljaC10b3VyLXRyYXZlbC13ZWJzaXRlLTE1NDUyLmpwZx4NQWx0ZXJuYXRlVGV4dAVUQ29kZSB3ZWIsU291cmNlIGNvZGUgd2ViLFNoYXJlIGNvZGUsV2Vic2l0ZSBkdSBs4buLY2gsZ2lhbyBkaeG7h24gd2ViLFNvdXJjZSB3ZWJzaXRlHgdUb29sVGlwBW1Eb3dubG9hZCBuZ2F5IFNvdXJjZSBjb2RlIHdlYiBIVE1MIENTUyBKYXZhc2NyaXB0IGdpYW8gZGnhu4duIHdlYnNpdGUgYm9vayB0b3VyIGR1IGzhu4tjaCBUT1VSLVRSQVZFTCBXZWJzaXRlZGQCAQ8WAh8FBRBYZW0gNSDhuqJuaCBkZW1vZAICDxYCHwUFX1NvdXJjZSBjb2RlIHdlYiBIVE1MIENTUyBKYXZhc2NyaXB0IGdpYW8gZGnhu4duIHdlYnNpdGUgYm9vayB0b3VyIGR1IGzhu4tjaCBUT1VSLVRSQVZFTCBXZWJzaXRlZAIDDxYCHwUFBTI5NDI0ZAIEDxYCHhFkYXRhLXJhdGVpdC12YWx1ZQUBNWQCBQ8WAh8FBRUxIMSQJiMyMjU7bmggZ2kmIzIyNTtkAgYPFgIfBQUEMTAzMmQCBw8WAh8FBQQ1Mzc0ZAIIDxYCHwUFAjIxZAIJDxYCHwUFD01p4buFbiBwaCYjMjM3O2QCCg8WAh8BaGQCDA8WBB8DBSgvbmdvbi1uZ3UtbGFwLXRyaW5oL2h0bWwtdGVtcGxhdGUtMjUuaHRtHwUFE0h0bWwgJmFtcDsgVGVtcGxhdGVkAg0PFgQfAwUjL3RoZS1sb2FpLXNvdXJjZS1jb2RlL3dlYnNpdGUtMS5odG0fBQUHV2Vic2l0ZWQCDg8WBB8DBRIvY29kZS1taWVuLXBoaS5odG0fBQUUQ29kZSBtaeG7hW4gcGgmIzIzNztkAg8PFgIfBQUJMTYtOS0yMDIxZAIQDxYCHwUFBENvZGVkAhEPFgIfBQUFNTUgTUJkAhIPFgIfAWhkAhgPFgIfAgIGFgxmD2QWAmYPFQIZL3R1LWtob2EvY29kZS13ZWItOTk1Lmh0bQhjb2RlIHdlYmQCAQ9kFgJmDxUCIi90dS1raG9hL3NvdXJjZS1jb2RlLXdlYi0xMzc5MC5odG0Pc291cmNlIGNvZGUgd2ViZAICD2QWAmYPFQIbL3R1LWtob2Evc2hhcmUtY29kZS04OTEuaHRtCnNoYXJlIGNvZGVkAgMPZBYCZg8VAh4vdHUta2hvYS93ZWJzaXRlLWR1LWxpY2gtNS5odG0RV2Vic2l0ZSBkdSBs4buLY2hkAgQPZBYCZg8VAh4vdHUta2hvYS9naWFvLWRpZW4td2ViLTMwMC5odG0PZ2lhbyBkaeG7h24gd2ViZAIFD2QWAmYPFQIgL3R1LWtob2Evc291cmNlLXdlYnNpdGUtMTM2Mi5odG0OU291cmNlIHdlYnNpdGVkAhkPFgIeBFRleHQFeFNvdXJjZSBjb2RlIGh0bWwgY3NzIMSRxrDhu6NjIG3DrG5oIGNvZGUgdGh14bqnbiBs4bqhaSwgxJHhu4MgbeG7jWkgbmfGsOG7nWkgdGhhbSBraOG6o28gdsOgIGTDuW5nIMSR4buDIGzDoG0gxJHhu5Mgw6FuLmQCGg8WAh8KBfoFPHAgc3R5bGU9ImJveC1zaXppbmc6IGJvcmRlci1ib3g7IG1hcmdpbjogMHB4OyBwYWRkaW5nOiAwcHg7IGJvcmRlcjogMHB4OyBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDsgb3V0bGluZTogMHB4OyB2ZXJ0aWNhbC1hbGlnbjogdG9wOyBjb2xvcjogcmdiKDEyNiwgODksIDQyKTsgZm9udC1mYW1pbHk6IFRhaG9tYSwgQXJpYWwsIHNhbnMtc2VyaWY7Ij4NCglTb3VyY2UgY29kZSB3ZWIgxJHGsOG7o2MgbcOsbmggY29kZSB0aHXhuqduIGLhurFuZyBIVE1MIHbDoCBDU1MuPC9wPg0KPHAgc3R5bGU9ImJveC1zaXppbmc6IGJvcmRlci1ib3g7IG1hcmdpbjogMHB4OyBwYWRkaW5nOiAwcHg7IGJvcmRlcjogMHB4OyBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDsgb3V0bGluZTogMHB4OyB2ZXJ0aWNhbC1hbGlnbjogdG9wOyBjb2xvcjogcmdiKDEyNiwgODksIDQyKTsgZm9udC1mYW1pbHk6IFRhaG9tYSwgQXJpYWwsIHNhbnMtc2VyaWY7Ij4NCglQaMOibiBjaGlhIGLhu5EgY+G7pWMgcsO1IHLDoG5nLjwvcD4NCjxwIHN0eWxlPSJib3gtc2l6aW5nOiBib3JkZXItYm94OyBtYXJnaW46IDBweDsgcGFkZGluZzogMHB4OyBib3JkZXI6IDBweDsgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7IG91dGxpbmU6IDBweDsgdmVydGljYWwtYWxpZ246IHRvcDsgY29sb3I6IHJnYigxMjYsIDg5LCA0Mik7IGZvbnQtZmFtaWx5OiBUYWhvbWEsIEFyaWFsLCBzYW5zLXNlcmlmOyI+DQoJQ8OzIHJlcG9uc2l2ZSB0csOqbiBt4buNaSB0aGnhur90IGLhu4suPC9wPg0KZAIbDxYCHwFoZAIcDxYCHwFnFgICAQ8WAh8CAgUWCmYPZBYCZg8VA31GaWxlc1VwbG9hZC9Db2RlVXBsb2FkL3NvdXJjZS1jb2RlLXdlYi1odG1sLWNzcy1qYXZhc2NyaXB0LWdpYW8tZGllbi13ZWJzaXRlLWJvb2stdG91ci1kdS1saWNoLXRvdXItdHJhdmVsLXdlYnNpdGUtMjEzNDI5LmpwZ1RDb2RlIHdlYixTb3VyY2UgY29kZSB3ZWIsU2hhcmUgY29kZSxXZWJzaXRlIGR1IGzhu4tjaCxnaWFvIGRp4buHbiB3ZWIsU291cmNlIHdlYnNpdGVuRG93bmxvYWQgU291cmNlIGNvZGUgd2ViIEhUTUwgQ1NTIEphdmFzY3JpcHQgZ2lhbyBkaeG7h24gd2Vic2l0ZSBib29rIHRvdXIgZHUgbOG7i2NoIFRPVVItVFJBVkVMIFdlYnNpdGUgbmdheSFkAgEPZBYCZg8VA31GaWxlc1VwbG9hZC9Db2RlVXBsb2FkL3NvdXJjZS1jb2RlLXdlYi1odG1sLWNzcy1qYXZhc2NyaXB0LWdpYW8tZGllbi13ZWJzaXRlLWJvb2stdG91ci1kdS1saWNoLXRvdXItdHJhdmVsLXdlYnNpdGUtMjEzNDMwLmpwZ1RDb2RlIHdlYixTb3VyY2UgY29kZSB3ZWIsU2hhcmUgY29kZSxXZWJzaXRlIGR1IGzhu4tjaCxnaWFvIGRp4buHbiB3ZWIsU291cmNlIHdlYnNpdGVuRG93bmxvYWQgU291cmNlIGNvZGUgd2ViIEhUTUwgQ1NTIEphdmFzY3JpcHQgZ2lhbyBkaeG7h24gd2Vic2l0ZSBib29rIHRvdXIgZHUgbOG7i2NoIFRPVVItVFJBVkVMIFdlYnNpdGUgbmdheSFkAgIPZBYCZg8VA31GaWxlc1VwbG9hZC9Db2RlVXBsb2FkL3NvdXJjZS1jb2RlLXdlYi1odG1sLWNzcy1qYXZhc2NyaXB0LWdpYW8tZGllbi13ZWJzaXRlLWJvb2stdG91ci1kdS1saWNoLXRvdXItdHJhdmVsLXdlYnNpdGUtMjEzNDMxLmpwZ1RDb2RlIHdlYixTb3VyY2UgY29kZSB3ZWIsU2hhcmUgY29kZSxXZWJzaXRlIGR1IGzhu4tjaCxnaWFvIGRp4buHbiB3ZWIsU291cmNlIHdlYnNpdGVuRG93bmxvYWQgU291cmNlIGNvZGUgd2ViIEhUTUwgQ1NTIEphdmFzY3JpcHQgZ2lhbyBkaeG7h24gd2Vic2l0ZSBib29rIHRvdXIgZHUgbOG7i2NoIFRPVVItVFJBVkVMIFdlYnNpdGUgbmdheSFkAgMPZBYCZg8VA31GaWxlc1VwbG9hZC9Db2RlVXBsb2FkL3NvdXJjZS1jb2RlLXdlYi1odG1sLWNzcy1qYXZhc2NyaXB0LWdpYW8tZGllbi13ZWJzaXRlLWJvb2stdG91ci1kdS1saWNoLXRvdXItdHJhdmVsLXdlYnNpdGUtMjEzNDMyLmpwZ1RDb2RlIHdlYixTb3VyY2UgY29kZSB3ZWIsU2hhcmUgY29kZSxXZWJzaXRlIGR1IGzhu4tjaCxnaWFvIGRp4buHbiB3ZWIsU291cmNlIHdlYnNpdGVuRG93bmxvYWQgU291cmNlIGNvZGUgd2ViIEhUTUwgQ1NTIEphdmFzY3JpcHQgZ2lhbyBkaeG7h24gd2Vic2l0ZSBib29rIHRvdXIgZHUgbOG7i2NoIFRPVVItVFJBVkVMIFdlYnNpdGUgbmdheSFkAgQPZBYCZg8VA31GaWxlc1VwbG9hZC9Db2RlVXBsb2FkL3NvdXJjZS1jb2RlLXdlYi1odG1sLWNzcy1qYXZhc2NyaXB0LWdpYW8tZGllbi13ZWJzaXRlLWJvb2stdG91ci1kdS1saWNoLXRvdXItdHJhdmVsLXdlYnNpdGUtMjEzNDMzLmpwZ1RDb2RlIHdlYixTb3VyY2UgY29kZSB3ZWIsU2hhcmUgY29kZSxXZWJzaXRlIGR1IGzhu4tjaCxnaWFvIGRp4buHbiB3ZWIsU291cmNlIHdlYnNpdGVuRG93bmxvYWQgU291cmNlIGNvZGUgd2ViIEhUTUwgQ1NTIEphdmFzY3JpcHQgZ2lhbyBkaeG7h24gd2Vic2l0ZSBib29rIHRvdXIgZHUgbOG7i2NoIFRPVVItVFJBVkVMIFdlYnNpdGUgbmdheSFkAh0PFgIfCmVkAh4PFgIfBQUwdG91ciBhbmQgdHJhdmVsIHdlYnNpdGUucmFyIDxzcGFuPls1NSBNQl08L3NwYW4+ZAIfDxYCHwUFHEZpbGUgxJEmIzIyNzsga2nhu4NtIGR1eeG7h3RkAiAPFgIfAwUeL2Jhby1jb2RlLXRydW5nLmh0bT9jb2RlPTI5NDI0ZAIhDw8WAh8IBW5Eb3dubG9hZCBTb3VyY2UgY29kZSB3ZWIgSFRNTCBDU1MgSmF2YXNjcmlwdCBnaWFvIGRp4buHbiB3ZWJzaXRlIGJvb2sgdG91ciBkdSBs4buLY2ggVE9VUi1UUkFWRUwgV2Vic2l0ZSBuZ2F5IRYIHgtkYXRhLXRhcmdldAUKI0xvZ2luRm9ybR4Hb25jbGljawUQY3JlYXRlQ2FwdGNoYSgpOx4Ecm9sZQUGYnV0dG9uHgtkYXRhLXRvZ2dsZQUFbW9kYWwWAmYPZBYCAgEPFgIfBQURKE1p4buFbiBwaCYjMjM3OylkAiIPDxYCHwgFbkRvd25sb2FkIFNvdXJjZSBjb2RlIHdlYiBIVE1MIENTUyBKYXZhc2NyaXB0IGdpYW8gZGnhu4duIHdlYnNpdGUgYm9vayB0b3VyIGR1IGzhu4tjaCBUT1VSLVRSQVZFTCBXZWJzaXRlIG5nYXkhFggfCwUKI0xvZ2luRm9ybR8MBRBjcmVhdGVDYXB0Y2hhKCk7Hw0FBmJ1dHRvbh8OBQVtb2RhbGQCKQ8WAh8CAgQWCGYPZBYMZg8VBT5zb3VyY2UtY29kZS13ZWItdHJ1eWVuLXRyYW5oLWZyYW1ld29yay1sYXJhdmVsLW15c3FsLTMyODcyLmh0bb8BRmlsZXNVcGxvYWQvQ29kZS9beWV1LWNhdS1iby1zdW5nLXZpZGVvLWh1b25nLWRhbi1jYWktZGF0LWNvZGUtLS12dWktbG9uZy1jYXAtbmhhdC1sYWktdmEtbGllbi1oZS16YWxvLWJhbi1xdWFuLXRyaS0wOTgxMjgyNzU2XS1zb3VyY2UtY29kZS13ZWItdHJ1eWVuLXRyYW5oLWZyYW1ld29yay1sYXJhdmVsLW15c3FsLTEwNDUyNy5qcGc2U291cmNlIGNvZGUgd2ViIHRydXnhu4duIHRyYW5oIGZyYW1ld29yayBsYXJhdmVsIG15c3FsNlNvdXJjZSBjb2RlIHdlYiB0cnV54buHbiB0cmFuaCBmcmFtZXdvcmsgbGFyYXZlbCBteXNxbD5zb3VyY2UtY29kZS13ZWItdHJ1eWVuLXRyYW5oLWZyYW1ld29yay1sYXJhdmVsLW15c3FsLTMyODcyLmh0bWQCAQ8PFgIeD0NvbW1hbmRBcmd1bWVudAUFMzI4NzJkZAIDDw8WAh8PBQUzMjg3MmRkAgQPFQoEMTEyMgE0JC9uZ29uLW5ndS1sYXAtdHJpbmgvcGhwLW15c3FsLTIxLmh0bQtQSFAgJiBNeVNRTD5zb3VyY2UtY29kZS13ZWItdHJ1eWVuLXRyYW5oLWZyYW1ld29yay1sYXJhdmVsLW15c3FsLTMyODcyLmh0bTZTb3VyY2UgY29kZSB3ZWIgdHJ1eeG7h24gdHJhbmggZnJhbWV3b3JrIGxhcmF2ZWwgbXlzcWw2U291cmNlIGNvZGUgd2ViIHRydXnhu4duIHRyYW5oIGZyYW1ld29yayBsYXJhdmVsIG15c3FsATUBNQExZAIFDxUIJC9uZ29uLW5ndS1sYXAtdHJpbmgvcGhwLW15c3FsLTIxLmh0bQtQSFAgJiBNeVNRTCMvdGhlLWxvYWktc291cmNlLWNvZGUvd2Vic2l0ZS0xLmh0bQdXZWJzaXRlBjMwMCBYdQowMy0xMS0yMDIyCUZ1bGwgY29kZQU1OCBNQmQCBg8VCwUzMjg3MgUzMjg3MgUzMjg3MhYwMy8xMS8yMDIyIDExOjE5OjQ1IENIB1dlYnNpdGVmU291cmNlIGNvZGUgaOG6p3UgbmjGsCDEkeG7pyBjaOG7qWMgbsSDbmcgY+G7p2EgbeG7mXQgd2Vic2l0ZSB0cnV54buHbiB0cmFuaCwgY8OzIHRo4buDIHBow6F0IHRyaeG7g24uAzMwMBYwMy8xMS8yMDM3IDExOjE5OjQ1IENIPnNvdXJjZS1jb2RlLXdlYi10cnV5ZW4tdHJhbmgtZnJhbWV3b3JrLWxhcmF2ZWwtbXlzcWwtMzI4NzIuaHRtFjAzLzExLzIwMjIgMTE6MTk6NDUgQ0gMSOG6o2kgxJDEg25nZAIBD2QWDGYPFQU1YXBwLWNoYXQtcmVhbHRpbWUtcmVhY3Rqcy1ub2RlanMtemFsby1jbG9uZS0zMjgzNi5odG1IRmlsZXNVcGxvYWQvQ29kZS9hcHAtY2hhdC1yZWFsdGltZS1yZWFjdGpzLW5vZGVqcy0tLXphbG8tY2xvbmUtMTMzNzAuanBnLUFwcCBjaGF0IHJlYWx0aW1lIFJlYWN0anMgTm9kZWpzIC0gWmFsbyBjbG9uZS1BcHAgY2hhdCByZWFsdGltZSBSZWFjdGpzIE5vZGVqcyAtIFphbG8gY2xvbmU1YXBwLWNoYXQtcmVhbHRpbWUtcmVhY3Rqcy1ub2RlanMtemFsby1jbG9uZS0zMjgzNi5odG1kAgEPDxYCHw8FBTMyODM2ZGQCAw8PFgIfDwUFMzI4MzZkZAIEDxUKAzkzMwEwKC9uZ29uLW5ndS1sYXAtdHJpbmgvaHRtbC10ZW1wbGF0ZS0yNS5odG0PSHRtbCAmIFRlbXBsYXRlNWFwcC1jaGF0LXJlYWx0aW1lLXJlYWN0anMtbm9kZWpzLXphbG8tY2xvbmUtMzI4MzYuaHRtLUFwcCBjaGF0IHJlYWx0aW1lIFJlYWN0anMgTm9kZWpzIC0gWmFsbyBjbG9uZS1BcHAgY2hhdCByZWFsdGltZSBSZWFjdGpzIE5vZGVqcyAtIFphbG8gY2xvbmUBNQE1ATFkAgUPFQgoL25nb24tbmd1LWxhcC10cmluaC9odG1sLXRlbXBsYXRlLTI1Lmh0bQ9IdG1sICYgVGVtcGxhdGUtL3RoZS1sb2FpLXNvdXJjZS1jb2RlL3BoYW4tbWVtLXVuZy1kdW5nLTIuaHRtG1Bo4bqnbiBt4buBbSAtIOG7qG5nIGThu6VuZwYzMDAgWHUKMjktMTAtMjAyMglGdWxsIGNvZGUHMzMuNCBLQmQCBg8VCwUzMjgzNgUzMjgzNgUzMjgzNhUyOS8xMC8yMDIyIDE6Mzc6MDAgQ0gbUGjhuqduIG3hu4FtIC0g4buobmcgZOG7pW5niwFBcHAgY2hhdCByZWFsdGltZSBSZWFjdGpzIE5vZGVqcyAtIFphbG8gY2xvbmUgRGI6IG1vbmdvREIgRmVhdHVyZTogbG9naW4sIHNpZ251cCwgZm9yZ290IHBhc3MsIGNoYXQsIGFkZCBmcmllbmQgbGlrZSBmYWNlYm9vaywgdXBhdGUgYXZhdGFyAzMwMBUyOS8xMC8yMDM3IDE6Mzc6MDAgQ0g1YXBwLWNoYXQtcmVhbHRpbWUtcmVhY3Rqcy1ub2RlanMtemFsby1jbG9uZS0zMjgzNi5odG0VMjkvMTAvMjAyMiAxOjM3OjAwIENIEEto4bqjIEhp4bq/dSBDYW9kAgIPZBYMZg8VBWBmdWxsLWNvZGUtd2ViLWR1LWxpY2gta2hhY2gtc2FuLWNodWFuLXNlby1rZW0tcGx1Z2luLWJhby1tYXQtdmEtY2FjaGUtYmFuLXF1eWVuLWNvLWtleS0zMjk1MS5odG19RmlsZXNVcGxvYWQvQ29kZS9mdWxsLWNvZGUtd2ViLWR1LWxpY2gta2hhY2gtc2FuLWNodWFuLXNlby1rZW0tcGx1Z2luLWJhby1tYXQtdmEtY2FjaGUtcGx1Z2luLXNlby1iYW4tcXV5ZW4tY28ta2V5LTE3MTYzOS5qcGd1RnVsbCBjb2RlIHdlYiBkdSBs4buLY2gsIGtow6FjaCBz4bqhbiBjaHXhuqluIHNlbyBrw6htIHBsdWdpbiBi4bqjbyBt4bqtdCB2w6AgY2FjaGUsIHBsdWdpbiBzZW8gYuG6o24gcXV54buBbiBjw7Mga2V5dUZ1bGwgY29kZSB3ZWIgZHUgbOG7i2NoLCBraMOhY2ggc+G6oW4gY2h14bqpbiBzZW8ga8OobSBwbHVnaW4gYuG6o28gbeG6rXQgdsOgIGNhY2hlLCBwbHVnaW4gc2VvIGLhuqNuIHF1eeG7gW4gY8OzIGtleWBmdWxsLWNvZGUtd2ViLWR1LWxpY2gta2hhY2gtc2FuLWNodWFuLXNlby1rZW0tcGx1Z2luLWJhby1tYXQtdmEtY2FjaGUtYmFuLXF1eWVuLWNvLWtleS0zMjk1MS5odG1kAgEPDxYCHw8FBTMyOTUxZGQCAw8PFgIfDwUFMzI5NTFkZAIEDxUKAzc4NAExJC9uZ29uLW5ndS1sYXAtdHJpbmgvd29yZHByZXNzLTI5Lmh0bQlXb3JkUHJlc3NgZnVsbC1jb2RlLXdlYi1kdS1saWNoLWtoYWNoLXNhbi1jaHVhbi1zZW8ta2VtLXBsdWdpbi1iYW8tbWF0LXZhLWNhY2hlLWJhbi1xdXllbi1jby1rZXktMzI5NTEuaHRtdUZ1bGwgY29kZSB3ZWIgZHUgbOG7i2NoLCBraMOhY2ggc+G6oW4gY2h14bqpbiBzZW8ga8OobSBwbHVnaW4gYuG6o28gbeG6rXQgdsOgIGNhY2hlLCBwbHVnaW4gc2VvIGLhuqNuIHF1eeG7gW4gY8OzIGtleXVGdWxsIGNvZGUgd2ViIGR1IGzhu4tjaCwga2jDoWNoIHPhuqFuIGNodeG6qW4gc2VvIGvDqG0gcGx1Z2luIGLhuqNvIG3huq10IHbDoCBjYWNoZSwgcGx1Z2luIHNlbyBi4bqjbiBxdXnhu4FuIGPDsyBrZXkBNQE1ATFkAgUPFQgkL25nb24tbmd1LWxhcC10cmluaC93b3JkcHJlc3MtMjkuaHRtCVdvcmRQcmVzcyMvdGhlLWxvYWktc291cmNlLWNvZGUvd2Vic2l0ZS0xLmh0bQdXZWJzaXRlBzIwMDAgWHUKMTYtMTEtMjAyMglGdWxsIGNvZGUHNzIuMyBNQmQCBg8VCwUzMjk1MQUzMjk1MQUzMjk1MRYxNi8xMS8yMDIyIDEwOjUzOjE5IFNBB1dlYnNpdGXJAU3DoyBuZ3Xhu5NuIFdlYnNpdGUgdGhp4bq/dCBr4bq/IHThu4kgbeG7iSBzYW5nIHRy4buNbmcgcGjDuSBo4bujcCB24bubaSBuZ8OgbmggZHUgbOG7i2NoLCB0b3VyLCBraMOhY2ggc+G6oW4uLi4sIGNvZGUgY2h14bqpbiBzZW8gdsOgIHThu5FpIMawdSBjb2RlIGNobyBuZ8aw4budaSBkw7luZyBjw7MgdHLhuqNpIG5naGnhu4dtIG5oYW5oIG5o4bqldAQyMDAwFjE2LzExLzIwMzcgMTA6NTM6MTkgU0FgZnVsbC1jb2RlLXdlYi1kdS1saWNoLWtoYWNoLXNhbi1jaHVhbi1zZW8ta2VtLXBsdWdpbi1iYW8tbWF0LXZhLWNhY2hlLWJhbi1xdXllbi1jby1rZXktMzI5NTEuaHRtFjE2LzExLzIwMjIgMTA6NTM6MTkgU0EMS2nhur9uIEfhuqFvZAIDD2QWDGYPFQVDc291cmNlLWNvZGUtd2ViLWJhbi1oYW5nLWRheS1kdS1jaHVjLW5hbmctYmVuLWJhbmtob2FkbWluLTMzMDU2Lmh0bV5GaWxlc1VwbG9hZC9Db2RlL3NvdXJjZS1jb2RlLXdlYi1iYW4tZ2lheS10aGUtdGhhby1kYXktZHUtY2h1Yy1uYW5nLWJlbi1iYW5raG9hZG1pbi0xMDEwNDYuanBnYkZ1bGwgc291cmNlIGNvZGUrYsOhbyBjw6FvIHdlYiBiw6FuIGdpw6B5IHRo4buDIHRoYW8gxJHhuqd5IMSR4bunIGNo4bupYyBuxINuZyBiw6puIGLDoW4sa2hvLGFkbWluYkZ1bGwgc291cmNlIGNvZGUrYsOhbyBjw6FvIHdlYiBiw6FuIGdpw6B5IHRo4buDIHRoYW8gxJHhuqd5IMSR4bunIGNo4bupYyBuxINuZyBiw6puIGLDoW4sa2hvLGFkbWluQ3NvdXJjZS1jb2RlLXdlYi1iYW4taGFuZy1kYXktZHUtY2h1Yy1uYW5nLWJlbi1iYW5raG9hZG1pbi0zMzA1Ni5odG1kAgEPDxYCHw8FBTMzMDU2ZGQCAw8PFgIfDwUFMzMwNTZkZAIEDxUKBDEzODgCMTMkL25nb24tbmd1LWxhcC10cmluaC9waHAtbXlzcWwtMjEuaHRtC1BIUCAmIE15U1FMQ3NvdXJjZS1jb2RlLXdlYi1iYW4taGFuZy1kYXktZHUtY2h1Yy1uYW5nLWJlbi1iYW5raG9hZG1pbi0zMzA1Ni5odG1iRnVsbCBzb3VyY2UgY29kZStiw6FvIGPDoW8gd2ViIGLDoW4gZ2nDoHkgdGjhu4MgdGhhbyDEkeG6p3kgxJHhu6cgY2jhu6ljIG7Eg25nIGLDqm4gYsOhbixraG8sYWRtaW5iRnVsbCBzb3VyY2UgY29kZStiw6FvIGPDoW8gd2ViIGLDoW4gZ2nDoHkgdGjhu4MgdGhhbyDEkeG6p3kgxJHhu6cgY2jhu6ljIG7Eg25nIGLDqm4gYsOhbixraG8sYWRtaW4DNCw1AzQsNQEyZAIFDxUIJC9uZ29uLW5ndS1sYXAtdHJpbmgvcGhwLW15c3FsLTIxLmh0bQtQSFAgJiBNeVNRTCMvdGhlLWxvYWktc291cmNlLWNvZGUvd2Vic2l0ZS0xLmh0bQdXZWJzaXRlBTkwIFh1CjAzLTEyLTIwMjIVRnVsbCBjb2RlICsgQsOhbyBjw6FvBjExMSBNQmQCBg8VCwUzMzA1NgUzMzA1NgUzMzA1NhUwMy8xMi8yMDIyIDg6NDQ6NTEgQ0gHV2Vic2l0ZcQBQ29kZSBwaMO5IGjhu6NwIGNobyBiw6FvIGPDoW8gbcO0biBo4buNYyB5w6p1IGPhuqd1IGNvZGUgd2ViLsSQ4bqneSDEkeG7pyBmaWxlIHdvcmQgYsOhbyBjw6FvIG3DtG4gaOG7jWMgdsOgIGjGsOG7m25nIGThuqtuIGPDoGkgxJHhurd0LiDEkOG6p3kgxJHhu6cgY2jhu6ljIG7Eg25nIGLDqm4gYsOhbixiw6puIGtobyB2w6AgYsOqbiBhZG1pbgI5MBUwMy8xMi8yMDM3IDg6NDQ6NTEgQ0hDc291cmNlLWNvZGUtd2ViLWJhbi1oYW5nLWRheS1kdS1jaHVjLW5hbmctYmVuLWJhbmtob2FkbWluLTMzMDU2Lmh0bRUwMy8xMi8yMDIyIDg6NDQ6NTEgQ0gIS2F0YXJpbmFkAioPZBYCZg9kFgJmD2QWBAIBDxYCHwUFG0NPREUgR+G7okkgJiMyMjE7IENITyBC4bqgTmQCAw8WAh8CAgQWCGYPZBYIZg8VBTRzaGFyZWNvZGUtYXV0by1zZW5kLW1haWwtdW5nLWR1bmctZ3VpLW1haWwtMzU2OTAuaHRtTEZpbGVzVXBsb2FkL0NvZGUvc2hhcmUtZnJlZS1jb2RlLWF1dG8tc2VuZC1tYWlsLXVuZy1kdW5nLWd1aS1tYWlsLTExMTI1MS5qcGc2U2hhcmUgZnJlZSBjb2RlIEF1dG8gc2VuZCBtYWlsIOG7qW5nIGThu6VuZyBn4butaSBtYWlsNlNoYXJlIGZyZWUgY29kZSBBdXRvIHNlbmQgbWFpbCDhu6luZyBk4bulbmcgZ+G7rWkgbWFpbDRzaGFyZWNvZGUtYXV0by1zZW5kLW1haWwtdW5nLWR1bmctZ3VpLW1haWwtMzU2OTAuaHRtZAIBDw8WAh8PBQUzNTY5MGRkAgMPDxYCHw8FBTM1NjkwZGQCBA8VFQM1NzUCNTYjL25nb24tbmd1LWxhcC10cmluaC92aXN1YWwtYy0xNy5odG0JVmlzdWFsIEMjNHNoYXJlY29kZS1hdXRvLXNlbmQtbWFpbC11bmctZHVuZy1ndWktbWFpbC0zNTY5MC5odG02U2hhcmUgZnJlZSBjb2RlIEF1dG8gc2VuZCBtYWlsIOG7qW5nIGThu6VuZyBn4butaSBtYWlsNlNoYXJlIGZyZWUgY29kZSBBdXRvIHNlbmQgbWFpbCDhu6luZyBk4bulbmcgZ+G7rWkgbWFpbAE1ATUBMQUzNTY5MAUzNTY5MAUzNTY5MBYyNS8wMy8yMDIzIDExOjI0OjUxIENIG1Bo4bqnbiBt4buBbSAtIOG7qG5nIGThu6VuZ3FDaMawxqFuZyB0csOsbmggZ+G7rWkgbmhp4buBdSBtYWlsIGPDuW5nIGzDumMgdGhhbyB0w6FjIGThu4UgZMOgbmcgduG7m2kgbmfGsOG7nWkgZMO5bmcuIENvZGUgZOG7hSBwaMOhdCB0cmnhu4NuLgEwFjI1LzAzLzIwMzggMTE6MjQ6NTEgQ0g0c2hhcmVjb2RlLWF1dG8tc2VuZC1tYWlsLXVuZy1kdW5nLWd1aS1tYWlsLTM1NjkwLmh0bRYyNS8wMy8yMDIzIDExOjI0OjUxIENICkhvw6BuZyBIdXlkAgEPZBYIZg8VBVdnaWFvLWRpZW4tdHJhbmctcXVhbi1seS1hZG1pbi1kYXNoYm9hcmQtY2hvLXF1YW4tbHktYmFuLWhhbmctZGF5LWR1LWNodWMtbmFuZy0zNTY4OC5odG3IAUZpbGVzVXBsb2FkL0NvZGUvW2xpZW4taGUtemFsby1iYW4tcXVhbi10cmktMDk4MTI4Mjc1Ni14YWMtbWluaC1jb2RlLWNvLW5ndW9uLWdvYy1tdWEtbGFpLXRyZW4tbmd1b24tY2hpbmgtdGhvbmddZ2lhby1kaWVuLXRyYW5nLXF1YW4tbHktYWRtaW4tZGFzaGJvYXJkLWNoby1xdWFuLWx5LWJhbi1oYW5nLWRheS1kdS1jaHVjLW5hbmctMTM0ODQuanBnYUdpYW8gZGnhu4duIHRyYW5nIHF14bqjbiBsw70gKGFkbWluIGRhc2hib2FyZCkgY2hvIHF14bqjbiBsw70gYsOhbiBow6BuZyDEkeG6p3kgxJHhu6cgdMOtbmggbsSDbmdhR2lhbyBkaeG7h24gdHJhbmcgcXXhuqNuIGzDvSAoYWRtaW4gZGFzaGJvYXJkKSBjaG8gcXXhuqNuIGzDvSBiw6FuIGjDoG5nIMSR4bqneSDEkeG7pyB0w61uaCBuxINuZ1dnaWFvLWRpZW4tdHJhbmctcXVhbi1seS1hZG1pbi1kYXNoYm9hcmQtY2hvLXF1YW4tbHktYmFuLWhhbmctZGF5LWR1LWNodWMtbmFuZy0zNTY4OC5odG1kAgEPDxYCHw8FBTM1Njg4ZGQCAw8PFgIfDwUFMzU2ODhkZAIEDxUVAzY0OAE1KC9uZ29uLW5ndS1sYXAtdHJpbmgvaHRtbC10ZW1wbGF0ZS0yNS5odG0PSHRtbCAmIFRlbXBsYXRlV2dpYW8tZGllbi10cmFuZy1xdWFuLWx5LWFkbWluLWRhc2hib2FyZC1jaG8tcXVhbi1seS1iYW4taGFuZy1kYXktZHUtY2h1Yy1uYW5nLTM1Njg4Lmh0bWFHaWFvIGRp4buHbiB0cmFuZyBxdeG6o24gbMO9IChhZG1pbiBkYXNoYm9hcmQpIGNobyBxdeG6o24gbMO9IGLDoW4gaMOgbmcgxJHhuqd5IMSR4bunIHTDrW5oIG7Eg25nYUdpYW8gZGnhu4duIHRyYW5nIHF14bqjbiBsw70gKGFkbWluIGRhc2hib2FyZCkgY2hvIHF14bqjbiBsw70gYsOhbiBow6BuZyDEkeG6p3kgxJHhu6cgdMOtbmggbsSDbmcBNQE1ATEFMzU2ODgFMzU2ODgFMzU2ODgWMjUvMDMvMjAyMyAxMTo1MjoxMiBTQQdXZWJzaXRl9gFUZW1wbGF0ZSBhZG1pbiBkYXNoYm9hcmQgZ+G7k20gbmhp4buBdSBjaOG7qWMgbsSDbmcgcGjhu6VjIHbhu6UgcXXhuqNuIGzDvSBiw6FuIGjDoG5nLCDEkcaw4bujYyB4w6J5IGThu7FuZyB24bubaSBjw6FjIHRoxrAgdmnhu4duIG7hu5VpIHRp4bq/bmcgbmjGsCBCb290c3RyYXAgNSwgSnF1ZXJ5VUksLi4uIENvZGUgxJHDoyDEkcaw4bujYyB04buRaSDGsHUgxJHhu4MgxJHhuqNtIGLhuqNvIHThu5FpIMSRYSBoaeG7h3UgbsSDbmcCMjAWMjUvMDMvMjAzOCAxMTo1MjoxMiBTQVdnaWFvLWRpZW4tdHJhbmctcXVhbi1seS1hZG1pbi1kYXNoYm9hcmQtY2hvLXF1YW4tbHktYmFuLWhhbmctZGF5LWR1LWNodWMtbmFuZy0zNTY4OC5odG0WMjUvMDMvMjAyMyAxMTo1MjoxMiBTQQRPdHRvZAICD2QWCGYPFQUhcXVhbi1seS1ndWkteGUtbWF5LW8tdG8tMzU2ODkuaHRtP0ZpbGVzVXBsb2FkL0NvZGUvY29kZS1hbmRyb2lkLXF1YW4tbHktZ3VpLXhlLW1heS1vLXRvLTExNjM2LmpwZy1Db2RlIEFuZHJvaWQgUXXhuqNuIGzDvSBn4butaSB4ZSBtw6F5LCDDtCB0w7QtQ29kZSBBbmRyb2lkIFF14bqjbiBsw70gZ+G7rWkgeGUgbcOheSwgw7QgdMO0IXF1YW4tbHktZ3VpLXhlLW1heS1vLXRvLTM1Njg5Lmh0bWQCAQ8PFgIfDwUFMzU2ODlkZAIDDw8WAh8PBQUzNTY4OWRkAgQPFRUDMjM0ATAiL25nb24tbmd1LWxhcC10cmluaC9hbmRyb2lkLTE1Lmh0bQdBbmRyb2lkIXF1YW4tbHktZ3VpLXhlLW1heS1vLXRvLTM1Njg5Lmh0bS1Db2RlIEFuZHJvaWQgUXXhuqNuIGzDvSBn4butaSB4ZSBtw6F5LCDDtCB0w7QtQ29kZSBBbmRyb2lkIFF14bqjbiBsw70gZ+G7rWkgeGUgbcOheSwgw7QgdMO0ATUBNQExBTM1Njg5BTM1Njg5BTM1Njg5FTI1LzAzLzIwMjMgODo0NzoxMiBDSBtQaOG6p24gbeG7gW0gLSDhu6huZyBk4bulbmddTmjhuq1uIGThuqFuZyBiaeG7g24gc+G7kSB4ZSwgcXXhuqNuIGzDvSBn4butaSB4ZSwgdGjhu5FuZyBrw6ogc+G7kSB0aeG7gW4gdGhlbyB04burbmcgdGjDoW5nAjk1FTI1LzAzLzIwMzggODo0NzoxMiBDSCFxdWFuLWx5LWd1aS14ZS1tYXktby10by0zNTY4OS5odG0VMjUvMDMvMjAyMyA4OjQ3OjEyIENIB0RvbmdIYWlkAgMPZBYIZg8VBTZzb3VyY2UtY29kZS1xdWFuLWx5LXNpZXUtdGhpLWMtZG8tYW4tMS11bmV0aS0zNTY5NC5odG24AUZpbGVzVXBsb2FkL0NvZGUvW3lldS1jYXUtYm8tc3VuZy12aWRlby1jYWktZGF0LWNvZGUtdmlkZW8tZGVtby0tLXZ1aS1sb25nLWNhcC1uaGF0LWxhaS12YS1saWVuLWhlLXphbG8tYmFuLXF1YW4tdHJpLTA5ODEyODI3NTZdLXNvdXJjZS1jb2RlLXF1YW4tbHktc2lldS10aGktYy1kby1hbi0xLXVuZXRpLTExMTkxMy5qcGc3U291cmNlIGNvZGUgcXXhuqNuIGzDvSBzacOqdSB0aOG7iyBDIyDEkOG7kyDDoW4gMSBVbmV0aTdTb3VyY2UgY29kZSBxdeG6o24gbMO9IHNpw6p1IHRo4buLIEMjIMSQ4buTIMOhbiAxIFVuZXRpNnNvdXJjZS1jb2RlLXF1YW4tbHktc2lldS10aGktYy1kby1hbi0xLXVuZXRpLTM1Njk0Lmh0bWQCAQ8PFgIfDwUFMzU2OTRkZAIDDw8WAh8PBQUzNTY5NGRkAgQPFRUDNDMwATMjL25nb24tbmd1LWxhcC10cmluaC92aXN1YWwtYy0xNy5odG0JVmlzdWFsIEMjNnNvdXJjZS1jb2RlLXF1YW4tbHktc2lldS10aGktYy1kby1hbi0xLXVuZXRpLTM1Njk0Lmh0bTdTb3VyY2UgY29kZSBxdeG6o24gbMO9IHNpw6p1IHRo4buLIEMjIMSQ4buTIMOhbiAxIFVuZXRpN1NvdXJjZSBjb2RlIHF14bqjbiBsw70gc2nDqnUgdGjhu4sgQyMgxJDhu5Mgw6FuIDEgVW5ldGkBNQE1ATEFMzU2OTQFMzU2OTQFMzU2OTQVMjYvMDMvMjAyMyAxOjUzOjA4IENIG1Bo4bqnbiBt4buBbSAtIOG7qG5nIGThu6VuZ2ZCw6BpIHThuq1wIGzhu5tuIMSR4buTIMOhbiAxIFVuZXRpIEMjIGJhbyBn4buTbSBiw6FvIGPDoW8gd29yZCAsIGPDoWMgc8ahIMSR4buTIHBow6JuIHLDoyBjaOG7qWMgbsSDbmcCNDAVMjYvMDMvMjAzOCAxOjUzOjA4IENINnNvdXJjZS1jb2RlLXF1YW4tbHktc2lldS10aGktYy1kby1hbi0xLXVuZXRpLTM1Njk0Lmh0bRUyNi8wMy8yMDIzIDE6NTM6MDggQ0gQUGhhbiBUaGFuaCBI4bqjaWQCMw8WAh8CAgEWAmYPZBYKZg8VCgAFMjMyMTMcNTBfcGhhbS1pY2gtcXVhbmctNDM3NjI2Lmh0bRkvYXNzZXRzL2ltYWdlcy9hdmFudGEucG5nHDUwX3BoYW0taWNoLXF1YW5nLTQzNzYyNi5odG0WNTBfUGjhuqFtIMONY2ggUXXhuqNuZwAFMjMyMTMFMjMyMTMKY210LXVubGlrZWQCAQ8PFgIfDwUFMjMyMTNkZAICDxUCATASMTA6MTIgLSAxMS8xMC8yMDIxZAIDDw8WBB8PBQUyMzIxMx8BaGRkAgQPFQMAZmPDsyB0aMOqdCBjaG8geGVtIHhpbiBzb3VyY2UgY29kZSBwaOG6p24gYnV0dG9uIGJvb2sgbm93IGsg4bqhLnF1YW5nYm4xNjA5QGdtYWlsLmNvbSAgZW0gY+G6o20gxqFuIOG6oQUyMzIxM2QCNA8WAh8FBUk8dWwgY2xhc3M9J3BhZ2luYXRpb24nPjxsaSBjbGFzcz0nYWN0aXZlJz48YSBocmVmPT9wYWdlPTE+MTwvYT48L2xpPjwvdWw+ZAI2DxYCHwFoZAI3DxYCHwkFATVkAjgPFgIfBQUBNWQCOQ8WAh8FBRUxIMSQJiMyMjU7bmggZ2kmIzIyNTtkAjoPFgIfBQUDKDEpZAI7DxYCHwUFAygwKWQCPA8WAh8FBQMoMClkAj0PFgIfBQUDKDApZAI+DxYCHwUFAygwKWQCPw8WAh8CAgEWAmYPZBYGZg8VBhBjaGluaC0zNTc1MjMuaHRtBkNow61uaBExNTowNCAtIDE2LzkvMjAyMRUxNi8wOS8yMDIxIDM6MDQ6NTIgQ0gBNRBDb2RlIHLhuqV0IHThu5F0ZAIBDw8WBB8PBQUyODY1NB8BaGRkAgIPFQIzQ29kZSBy4bqldCB04buRdCB2w6AgcGjDuSBo4bujcCDEkeG7gyBwaMOhdCB0cmnhu4NuATVkAkAPEGRkFgFmZAISDxYCHwMFHC90aGFuaC12aWVuL2NoaW5oLTM1NzUyMy5odG0WAgIBDxYEHwQFGVRow6BuaCB2acOqbiBDaMOtbmggTWF0dG8eA2FsdAUMQ2jDrW5oIE1hdHRvZAITDxYEHwMFHC90aGFuaC12aWVuL2NoaW5oLTM1NzUyMy5odG0fBAUZVGjDoG5oIHZpw6puIENow61uaCBNYXR0bxYCZg8WAh8FBQpDaCYjMjM3O25oZAIUDxYCHwUFBjIgQ29kZWQCFQ8WAh8FBQYyIENvZGVkAhYPFgIfAWhkAhcPZBYCAgEPFgIfBQUFMjk0MjRkAhkPZBYCAgEPFgIfAgIFFgpmD2QWAmYPFQw8dGVtcGxhdGUtd2Vic2l0ZS1waGltLWFuaW1lLWN1Yy1kZXAtY2h1YW4tc2VvLTIwMjMtMzQyODYuaHRtWUZpbGVzVXBsb2FkL0NvZGUvZnJlZS10ZW1wbGF0ZS1ibG9nZXItd2Vic2l0ZS1waGltLWFuaW1lLWN1Yy1kZXAtY2h1YW4tc2VvLTIwMjMtMTA0NjUuanBnR3dlYiBwaGltIGFuaW1lLFRlbXBsYXRlIGFuaW1lLGFuaW1lLHRlbXBsYXRlIGFuaW1lIG1vdmllLHRlbXBsYXRlIG1vdmllRUZyZWUgVGVtcGxhdGUgYmxvZ2VyIHdlYnNpdGUgcGhpbSBhbmltZSBj4buxYyDEkeG6uXAgY2h14bqpbiBzZW8gMjAyMzx0ZW1wbGF0ZS13ZWJzaXRlLXBoaW0tYW5pbWUtY3VjLWRlcC1jaHVhbi1zZW8tMjAyMy0zNDI4Ni5odG1FRnJlZSBUZW1wbGF0ZSBibG9nZXIgd2Vic2l0ZSBwaGltIGFuaW1lIGPhu7FjIMSR4bq5cCBjaHXhuqluIHNlbyAyMDIzRUZyZWUgVGVtcGxhdGUgYmxvZ2VyIHdlYnNpdGUgcGhpbSBhbmltZSBj4buxYyDEkeG6uXAgY2h14bqpbiBzZW8gMjAyMwE1KC9uZ29uLW5ndS1sYXAtdHJpbmgvaHRtbC10ZW1wbGF0ZS0yNS5odG0PSHRtbCAmIFRlbXBsYXRlBDMxOTkDNTMzZAIBD2QWAmYPFQxAdGVtcGxhdGUtd2Vic2l0ZS14ZW0tcGhpbS1hbmltZS1jdWMtZGVwLWNodWFuLXNlby0yMDIyLTM0MTk0Lmh0bZIBRmlsZXNVcGxvYWQvQ29kZS9ba2hvbmctZGFuZy1sYWktY29kZS1kYS1jby10cmVuLWhlLXRob25nLXRydW5nLWxhcC1tYS1jb2RlLTM0MTk0XS10ZW1wbGF0ZS13ZWJzaXRlLXhlbS1waGltLWFuaW1lLWN1Yy1kZXAtY2h1YW4tc2VvLTIwMjItMTczNC5qcGeKAVRlbXBsYXRlIHdlYnNpdGUgcGhpbSBhbmltZSxUZW1wbGF0ZSB3ZWJzaXRlIHBoaW0sVGVtcGxhdGUgd2Vic2l0ZSB4ZW0gcGhpbSBhbmltZSxUZW1wbGF0ZSBwaGltIGFuaW1lLHdlYnNpdGUgcGhpbSBodG1sLHdlYnNpdGUgYW5pbWUgaHRtbD1UZW1wbGF0ZSB3ZWJzaXRlIHhlbSBwaGltIGFuaW1lIGPhu7FjIMSR4bq5cCBjaHXhuqluIHNlbyAyMDIyQHRlbXBsYXRlLXdlYnNpdGUteGVtLXBoaW0tYW5pbWUtY3VjLWRlcC1jaHVhbi1zZW8tMjAyMi0zNDE5NC5odG09VGVtcGxhdGUgd2Vic2l0ZSB4ZW0gcGhpbSBhbmltZSBj4buxYyDEkeG6uXAgY2h14bqpbiBzZW8gMjAyMj1UZW1wbGF0ZSB3ZWJzaXRlIHhlbSBwaGltIGFuaW1lIGPhu7FjIMSR4bq5cCBjaHXhuqluIHNlbyAyMDIyATUoL25nb24tbmd1LWxhcC10cmluaC9odG1sLXRlbXBsYXRlLTI1Lmh0bQ9IdG1sICYgVGVtcGxhdGUEMjQ4OQM0NTZkAgIPZBYCZg8VDE5naWFvLWRpZW4tdHJhbmctd2ViLWJhbi1oYW5nLWFwcGxlLWNoaW5oLWhhbmctaHRtbC1jc3MtanMtcmVzcG9uc2l2ZS0zNTY3Ni5odG1gRmlsZXNVcGxvYWQvQ29kZS9naWFvLWRpZW4tdHJhbmctd2ViLWJhbi1oYW5nLWFwcGxlLWNoaW5oLWhhbmctaHRtbC1jc3MtanMtcmVzcG9uc2l2ZS0xMzI5MTYuanBnmwF3ZWJzaXRlIGLDoW4gaMOgbmcsd2Vic2l0ZSBiw6FuIMSRaeG7h24gdGhv4bqhaSBkaSDEkeG7mW5nLHdlYnNpdGUgYsOhbiBsYWJ0b3Asd2Vic2l0ZSB0aMawxqFuZyBt4bqhaSDEkWnhu4duIHThu60sd2Vic2l0ZSDEkWnhu4duIG3DoXksbGFuZGluZyBwYWdlIMSR4bq5cE9HaWFvIGRp4buHbiB0cmFuZyBXZWIgYsOhbiBow6BuZyBBcHBsZSBjaMOtbmggaMOjbmcgKGh0bWwsIGNzcywganMsIHJlc3BvbnNpdmUpTmdpYW8tZGllbi10cmFuZy13ZWItYmFuLWhhbmctYXBwbGUtY2hpbmgtaGFuZy1odG1sLWNzcy1qcy1yZXNwb25zaXZlLTM1Njc2Lmh0bU9HaWFvIGRp4buHbiB0cmFuZyBXZWIgYsOhbiBow6BuZyBBcHBsZSBjaMOtbmggaMOjbmcgKGh0bWwsIGNzcywganMsIHJlc3BvbnNpdmUpT0dpYW8gZGnhu4duIHRyYW5nIFdlYiBiw6FuIGjDoG5nIEFwcGxlIGNow61uaCBow6NuZyAoaHRtbCwgY3NzLCBqcywgcmVzcG9uc2l2ZSkBNSgvbmdvbi1uZ3UtbGFwLXRyaW5oL2h0bWwtdGVtcGxhdGUtMjUuaHRtD0h0bWwgJiBUZW1wbGF0ZQQxOTAzAThkAgMPZBYCZg8VDC53ZWJzaXRlLWRlc2lnbi1odG1sLWNzcy1qcy1yZWFscGhvbmUtMzMxNzUuaHRtP0ZpbGVzVXBsb2FkL0NvZGUvd2Vic2l0ZS1kZXNpZ24taHRtbC1jc3MtanMtcmVhbHBob25lLTIwNTE0LmpwZ0BDU1MsSFRNTCxKYXZhU2NyaXB0LEhUTUwgQ1NTIEphdmFTY3JpcHQsRWFzeSBUdXRvcmlhbHMsQ29kZSBGcmVlJldlYnNpdGUgRGVzaWduIEhUTUwgQ1NTIEpTIDogUmVhbFBob25lLndlYnNpdGUtZGVzaWduLWh0bWwtY3NzLWpzLXJlYWxwaG9uZS0zMzE3NS5odG0mV2Vic2l0ZSBEZXNpZ24gSFRNTCBDU1MgSlMgOiBSZWFsUGhvbmUmV2Vic2l0ZSBEZXNpZ24gSFRNTCBDU1MgSlMgOiBSZWFsUGhvbmUBNSgvbmdvbi1uZ3UtbGFwLXRyaW5oL2h0bWwtdGVtcGxhdGUtMjUuaHRtD0h0bWwgJiBUZW1wbGF0ZQQxODA0AzI1NWQCBA9kFgJmDxUMJ2dpYW8tZGllbi13ZWJzaXRlLWJhbi1kb25nLWhvLTMzMTQzLmh0bT9GaWxlc1VwbG9hZC9Db2RlL2dpYW8tZGllbi13ZWJzaXRlLWJhbi1kb25nLWhvLWh0bWw1LTE0MzM0My5qcGdxZ2lhbyBkaeG7h24gd2Vic2l0ZSBiw6FuIMSR4buTbmcgaOG7kyxodG1sNSB3ZWIgYsOhbiDEkeG7k25nIGjhu5Msd2ViIGLDoW4gxJHhu5NuZyBo4buTLHdlYnNpdGUgYsOhbiDEkeG7k25nIGjhu5MrR2lhbyBkaeG7h24gd2Vic2l0ZSBiw6FuIMSR4buTbmcgaOG7kyBodG1sNSdnaWFvLWRpZW4td2Vic2l0ZS1iYW4tZG9uZy1oby0zMzE0My5odG0rR2lhbyBkaeG7h24gd2Vic2l0ZSBiw6FuIMSR4buTbmcgaOG7kyBodG1sNStHaWFvIGRp4buHbiB3ZWJzaXRlIGLDoW4gxJHhu5NuZyBo4buTIGh0bWw1ATAoL25nb24tbmd1LWxhcC10cmluaC9odG1sLXRlbXBsYXRlLTI1Lmh0bQ9IdG1sICYgVGVtcGxhdGUEMTA4NwMxNDNkZKM/0Pgd9fiybnI2OuIxPqQfRnB4" />
-</div>
-
-<script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['form1'];
-if (!theForm) {
-    theForm = document.form1;
-}
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
-}
-//]]>
-</script>
+<html>
+  <head>
+    <title>Falling Leaves Animation</title>
+    <style>
 
 
-<script src="/WebResource.axd?d=iIievAOYUBjQGcseDNqpx8NcERjOYTIrC-PVhqWtM0V_h0ghOgi7OWiqfFJj4uUm4hzRUl_r89Yzy7jjCXTIMTqXI_41&amp;t=636042971952281841" type="text/javascript"></script>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:&display=swap');
 
 
-<script src="/ScriptResource.axd?d=0x0qOF8MPFRoOqoXM35BgpVzxnjcK3otlVwvVtZc5UCPL6OfyQIO9uWKoYsWKYxhg_HhzafSI1kW4ZfFqKkWyyKPj8NVuYnj3zDSu5SX8R7R9CR_lw8yczISJFf7IcM608EWVUG62AfSbJHhfeTwTiUN_gQ1&amp;t=ffffffffc7ae6e38" type="text/javascript"></script>
-<script src="/ScriptResource.axd?d=5VEYoFNxmn_r51Tx006178oh7fg5YWlG0LbCvLJzRwzNVkk9-FwUVlprpE48b-DiK-kkP8WOtIYzeCckaH6EKqijmKuZNQGrqvJtifwrPkckT9PhZdV21YvV2vrs9rTWtWkVKZwxHugXnWOI1FrT1-fAuRfJKKN51ZvGDmaDzgrQBN2S0&amp;t=ffffffffc7ae6e38" type="text/javascript"></script>
-<div class="aspNetHidden">
 
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="05E0F5E4" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAC938O0yD2mYSdNr+1bwnYQMgrT1NfwTDXx+Ybv9qHg5f8MNT5FX+M6L69K6C80mtJcdXJoU9Fe8Ki8vwmNfujZI4tnx67o439Nbc3G1Du/z3iPus9Vnajc9bKCza3b/Y1Ww+n74ZBCseZGIUJ1cPBtRBUuYQQJxfV/8tqgUPBXCLrxdg9w7dU+vsfUIh67BHYTwRjQgGa1TC9dJksoz4FWyZEdSl5o3FD6Tmo4hK6qlc6F1bBZ44kjMci1aHh0+7OCVjXwJ5zgCrT8YMLOyzR51U4Jp8hFj6qj699MeuIifsY5fQzRQt9BWoGOIuH3wh8TEH/TutfKKUnST3jKNyKtdVLhVDZ9HhHt1tEJVheTOWXkbR58o3Futr1GsqDyFDAqVkdwRXShqLPJEGXrU3H5wKIVxLNUF4bPYz4JqHwlZahIJkeQMT5TXIHno0Qss93iWDXDJnMiBkgzO41JqwOYQQMmcNo8Wor59h2dRBHKxAi4wBaEG+EV3l1ASr4Jiba0ndPKqCRtOQVV3DgSNe4+YWzGFUA54GtfRs64tWXSwzQDHZgFs0pVO42FidkEMLCKNa8Gzmq1G48KRu8q121uY0wZBtl+jFpRDkoBuV36W/dj+bIrkXNPhWRxp2O0z2VSz4Ku/eyfRe84G3bmA4HVLTJ9hhQUd/EPW/5Us2xKfRchsmcKfiMkJNB42BdGgeT1LUDY6GyYKu1UqODkm9KUf40A/UspJY4Q+aVIUuaXs5sBDCoAIomLZiB9+PYRjHOgs3KrlgQJ+bD9EPMtbQLI0ExGQYIgPM6m4vkLoWNKM91AIUi4vXbtiM6MmGj302r0c8jRRGItRANKHD03bCMdRlzgAAv/Ifmg88Si4NVq94K/tG67+Z+MhtkbvP+pl/RMaJUrgHpH6QQ5oWm12ASZpGDPZ/jrvUnbKBTKuwdvc0ZMRVZPTHpG20A8odd+6F/ADVMXZdZAfQ88ybIDArVHEvWVQRGrGf/HCBgUJnsSYpqsoVs3DTbD1I77sxXLdD/z37/dd" />
-</div>
-        <script type="text/javascript">
-//<![CDATA[
-Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1', ['tctl00$ctl00$mainbody$contentbody$upPannel','mainbody_contentbody_upPannel','tctl00$ctl00$mainbody$contentbody$ucSuggest$upPannel','mainbody_contentbody_ucSuggest_upPannel','tctl00$ctl00$mainbody$contentbody$UpdatePanel1','mainbody_contentbody_UpdatePanel1','tctl00$ctl00$ctl24','ctl24'], [], [], 90, 'ctl00$ctl00');
-//]]>
-</script>
-
+body {
         
-        <div class="row-fluid">
-            <div id="myCarousel" class="carousel slide vertical">
-                <div class="carousel-inner">
-                    <div class="active item" style="background: #86bd3b;">
-                        
-                        <a data-toggle="modal" data-target="#LoginForm" onclick="createCaptcha();" title="UPLOAD source code KIẾM TIỀN cùng Sharecode.vn">
-                            <img src="/assets/images/code-hay-upload-kiem-tien.jpg" />
-                        </a>
-                        
-                    </div>
-                     <div class="item" style="background: #2175ba;">
-                        <a href="/kien-thuc-lap-trinh/dich-vu-thiet-ke-website-chuyen-nghiep-voi-gia-cuc-re-va-nhieu-uu-dai-tai-sharecodevn-880.htm" title="Dịch vụ thiết kế website" target="_blank">
-                            <img src="/assets/images/thiet-ke-website.jpg" />
-                        </a>
-                    </div>
-                   <div class="item" style="background: #34a5cd;">
-                                <a href="/vps-may-chu-ao.htm" title="Đăng kí CLOULD VPS NGAY!">
-                                <img src="/assets/images/share-code-clould-vps.jpg" /> </a>
-                            </div>
-                          
-                   
-                </div>
-            </div>
-        </div>
-
-        <div id="header" class="header">
-            <div class="top-header">
-                <div class="container">                    
-                    <div class="nav-top-links">
-                        <a class="first-item" href="tel:+84981282756" title="Click gọi ngay!">
-                            <img alt="hotline" src="/assets/images/phone.png" />0981.282.756</a>
-                        <a href="mailto:sharecode.contact@gmail.com" title="Click để gửi email!">
-                            <img alt="email sharecode" src="/assets/images/email.png" />Sharecode.contact@gmail.com</a>
-                        <a href="/kien-thuc-lap-trinh.htm">Kiến thức lập trình</a>
-                        <a href="/su-kien.htm">Sự kiện</a>
-                    </div>
-                    <div id="LoginBox" class="support-link">
-                        <a data-toggle="modal" data-target="#LoginForm" onclick="createCaptcha();" role="button">Đăng nhập</a>
-                        <a href="/dang-ki-tai-khoan.htm">Đăng kí</a>
-                    </div>
-                    
-                    <div id="user-info-top" class="user-info pull-right">
-                        
-                        <div id="AcLogin" class="dropdown">
-                            <a class="current-open" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="/code-upload-cua-toi.htm"><span></span></a>
-                            <ul class="dropdown-menu mega_dropdown" role="menu">
-                                <li><a data-toggle="modal" data-target="#LoginForm" onclick="createCaptcha();" role="button"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;&nbsp;Đăng nhập</a></li>
-                                <li><a href="/dang-ki-tai-khoan.htm"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;Đăng kí</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container main-header">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-3 col-md-3 logo">
-                        <a href="/">
-                            <img alt="Trang chủ sharecode.vn" title="Sharecode.vn" src="/assets/images/logo.png" /></a>
-                    </div>
-                    <div class="col-xs-7 col-sm-7 col-md-6 header-search-box">
-                        <div class="form-inline search-h">
-                            <!-- <div id="regPanel" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;btnSearch&#39;)"> -->
-	
-                                <div class="form-group form-category">
-                                    <input type="hidden" name="ctl00$ctl00$hdLangFilter" id="hdLangFilter" />
-                                    <select class="select-category" id="slSearch">
-                                        <option value="0">TẤT CẢ CODE</option>
-                                        
-                                                <option value="15">Android</option>
-                                            
-                                                <option value="23">iOS</option>
-                                            
-                                                <option value="26">Windows phone</option>
-                                            
-                                                <option value="21">PHP & MySQL</option>
-                                            
-                                                <option value="29">WordPress</option>
-                                            
-                                                <option value="28">Joomla</option>
-                                            
-                                                <option value="17">Visual C#</option>
-                                            
-                                                <option value="16">Asp/Asp.Net</option>
-                                            
-                                                <option value="20">Java/JSP</option>
-                                            
-                                                <option value="19">Visual Basic</option>
-                                            
-                                                <option value="24">Cocos2D</option>
-                                            
-                                                <option value="27">Unity</option>
-                                            
-                                                <option value="18">Visual C++</option>
-                                            
-                                                <option value="25">Html & Template</option>
-                                            
-                                                <option value="22">Khác</option>
-                                            
-                                    </select>
-                                </div>
-                                <div class="form-group input-serach">
-                                    <input name="ctl00$ctl00$txtSearch" type="text" id="txtSearch" class="txt-search txt-auto" placeholder="Nhập Từ khóa (or) Mã code" />
-                                     <input name="username" readonly  style="width:0;position:absolute"/>
-                                </div>
-                                <a id="btnSearch" class="pull-right btn-search" href="javascript:__doPostBack(&#39;ctl00$ctl00$btnSearch&#39;,&#39;&#39;)"></a>
-                            
-</div>
-                        </div>
-                    </div>
-                    <div class="col-xs-5 col-sm-2 col-md-3 shopping-cart-box btn-align">
-                        
-                        <a data-toggle="modal" data-target="#LoginForm" onclick="createCaptcha();" role="button" class="button-green" title="Nạp tiền vào tài khoản"><i class="fa fa-money fa-lg" aria-hidden="true"></i>&nbsp; NẠP XU</a>&nbsp;&nbsp;
-                        <a data-toggle="modal" data-target="#LoginForm" onclick="createCaptcha();" role="button" class="button-orange" title="Tặng thêm 5 Point cho mỗi Upload"><i class="fa fa-cloud-upload fa-lg" aria-hidden="true"></i>&nbsp; TẢI LÊN</a>
-                        
-                    </div>
-                </div>
-            </div>
-            <div id="nav-top-menu" class="nav-top-menu">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-3" id="box-vertical-megamenus">
-                            <div class="box-vertical-megamenus">
-                                <h4 class="title">
-                                    <span class="title-menu">Danh mục</span>
-                                    <span class="btn-open-mobile pull-right home-page"><i class="fa fa-bars"></i></span>
-                                </h4>
-                                <div class="vertical-menu-content is-home">
-                                    <ul class="vertical-menu-list">
-                                        <li>
-                                            <a class="parent" href="#">
-                                                <img class="icon-menu" alt="Thể loại code" src="/assets/images/2.png" />PHÂN LOẠI CODE</a>
-                                            <div class="vertical-dropdown-menu">
-                                                <div class="vertical-groups col-sm-6 col-md-4">
-                                                    <div class="mega-group col-sm-12">
-                                                        <span class="mega-group-header"><span>THỂ LOẠI CODE</span></span>
-                                                        <ul class="group-link-default">
-                                                            
-                                                                    <li><a class="bold" href='/the-loai-source-code/website-1.htm'>Website</a></li>
-                                                                
-                                                                    <li><a class="bold" href='/the-loai-source-code/phan-mem-ung-dung-2.htm'>Phần mềm - Ứng dụng</a></li>
-                                                                
-                                                                    <li><a class="bold" href='/the-loai-source-code/game-3.htm'>Game</a></li>
-                                                                
-                                                                    <li><a class="bold" href='/the-loai-source-code/khac-4.htm'>Khác</a></li>
-                                                                
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="vertical-groups col-sm-6 col-md-5">
-                                                    <div class="mega-group col-sm-12">
-                                                        <span class="mega-group-header"><span>SOURCE CODE</span></span>
-                                                        <ul class="group-link-default">
-                                                            <li><a href="/code-chat-luong.htm"><strong>Code chất lượng</strong> (>= 100 Xu)</a></li>
-                                                            <li><a href="/code-tham-khao.htm"><strong>Code tham khảo</strong> (2 Xu - 99 Xu)</a></li>
-                                                            <li><a href="/code-mien-phi.htm"><strong>Code miễn phí</strong> (0 Xu)</a></li>
-
-
-                                                        </ul>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </li>
-                                        
-                                                <li class=""><a href='/ngon-ngu-lap-trinh/android-15.htm'>
-                                                    <img class="icon-menu" alt="Android" src="/assets/images/3.png">Android</a></li>
-                                            
-                                                <li class=""><a href='/ngon-ngu-lap-trinh/ios-23.htm'>
-                                                    <img class="icon-menu" alt="iOS" src="/assets/images/3.png">iOS</a></li>
-                                            
-                                                <li class=""><a href='/ngon-ngu-lap-trinh/windows-phone-26.htm'>
-                                                    <img class="icon-menu" alt="Windows phone" src="/assets/images/3.png">Windows phone</a></li>
-                                            
-                                                <li class=""><a href='/ngon-ngu-lap-trinh/php-mysql-21.htm'>
-                                                    <img class="icon-menu" alt="PHP & MySQL" src="/assets/images/3.png">PHP & MySQL</a></li>
-                                            
-                                                <li class=""><a href='/ngon-ngu-lap-trinh/wordpress-29.htm'>
-                                                    <img class="icon-menu" alt="WordPress" src="/assets/images/3.png">WordPress</a></li>
-                                            
-                                                <li class=""><a href='/ngon-ngu-lap-trinh/joomla-28.htm'>
-                                                    <img class="icon-menu" alt="Joomla" src="/assets/images/3.png">Joomla</a></li>
-                                            
-                                                <li class=""><a href='/ngon-ngu-lap-trinh/visual-c-17.htm'>
-                                                    <img class="icon-menu" alt="Visual C#" src="/assets/images/3.png">Visual C#</a></li>
-                                            
-                                                <li class=""><a href='/ngon-ngu-lap-trinh/aspaspnet-16.htm'>
-                                                    <img class="icon-menu" alt="Asp/Asp.Net" src="/assets/images/3.png">Asp/Asp.Net</a></li>
-                                            
-                                                <li class=""><a href='/ngon-ngu-lap-trinh/javajsp-20.htm'>
-                                                    <img class="icon-menu" alt="Java/JSP" src="/assets/images/3.png">Java/JSP</a></li>
-                                            
-                                                <li class=""><a href='/ngon-ngu-lap-trinh/visual-basic-19.htm'>
-                                                    <img class="icon-menu" alt="Visual Basic" src="/assets/images/3.png">Visual Basic</a></li>
-                                            
-                                                <li class="cat-link-orther"><a href='/ngon-ngu-lap-trinh/cocos2d-24.htm'>
-                                                    <img class="icon-menu" alt="Cocos2D" src="/assets/images/3.png">Cocos2D</a></li>
-                                            
-                                                <li class="cat-link-orther"><a href='/ngon-ngu-lap-trinh/unity-27.htm'>
-                                                    <img class="icon-menu" alt="Unity" src="/assets/images/3.png">Unity</a></li>
-                                            
-                                                <li class="cat-link-orther"><a href='/ngon-ngu-lap-trinh/visual-c-18.htm'>
-                                                    <img class="icon-menu" alt="Visual C++" src="/assets/images/3.png">Visual C++</a></li>
-                                            
-                                                <li class="cat-link-orther"><a href='/ngon-ngu-lap-trinh/html-template-25.htm'>
-                                                    <img class="icon-menu" alt="Html & Template" src="/assets/images/3.png">Html & Template</a></li>
-                                            
-                                                <li class="cat-link-orther"><a href='/ngon-ngu-lap-trinh/khac-22.htm'>
-                                                    <img class="icon-menu" alt="Khác" src="/assets/images/3.png">Khác</a></li>
-                                            
-                                    </ul>
-                                    <div class="all-category"><span class="open-cate">Xem tất cả</span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="main-menu" class="col-sm-9 main-menu">
-                            <nav class="navbar navbar-default">
-                                <div class="container-fluid">
-                                    <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                                            <i class="fa fa-bars"></i>
-                                        </button>
-                                        <a class="navbar-brand" href="#">MENU</a>
-                                    </div>
-                                    <div id="navbar" class="navbar-collapse collapse">
-                                        <ul class="nav navbar-nav">
-                                            <li id="mnhome" class="active" title="Trang chủ"><a href="/"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a></li>
-                                            <li id="mntopcode" title="Top code nổi bật"><a href="/top-codes.htm">Top code</a></li>
-                                            <li id="mncodeok" title="Code chất lượng (>= 100 Xu)"><a href="/code-chat-luong.htm">Code chất lượng <span class="notify notify-right"></span></a></li>
-                                            <li id="mncode" title="Code tham khảo (2 Xu - 99 Xu)"><a href="/code-tham-khao.htm">Code tham khảo</a></li>
-                                            <li id="mncodefree" title="Code miễn phí (0 Xu)"><a href="/code-mien-phi.htm">Code miễn phí</a></li>
-                                            <li id="mndomain" class="dropdown">
-                                                <a href="/hosting-ssd.htm" class="dropdown-toggle" data-toggle="dropdown">Domain - Hosting <span class="notify notify-right"></span></a>
-                                                <ul class="dropdown-menu container-fluid">
-                                                    <li class="block-container">
-                                                        <ul class="block">
-                                                            <li class="link_container"><a href="/dang-ki-ten-mien.htm">Đăng kí tên miền</a></li>
-                                                            <li class="link_container"><a href="/hosting-ssd.htm">Hosting SSD</a></li>
-                                                            <li class="link_container"><a href="/vps-may-chu-ao.htm">Clould VPS</a></li>
-                                                            <li class="link_container"><a href="/email-server.htm">Email server</a></li>
-                                                            <li class="link_container"><a href="/chung-thuc-ssl.htm">Chứng thực SSL</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                           
-                                        </ul>
-                                    </div>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                    <div id="form-search-opntop">
-                    </div>
-                    <div id="user-info-opntop">
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
+        height: 100vh;
+        background-color: #f2f2f2;
+        background-image: url("background.png");
+        background-size: cover; /* optional */
         
-        <script type="text/javascript">
-            function fosp_login() {
-                jQuery('#login_error').html('');
-                jQuery('input[type="text"], input[type="password"]').removeClass('validation-failed');
-                email = jQuery('#log_username').val();
-                pass = jQuery('#log_password').val();
-                if (email == '') {
-                    jQuery('#log_username').addClass('validation-failed');
-                    jQuery('#login_error').html('Vui lòng nhập địa chỉ email.');
-                    jQuery('#log_username').focus();
-                    return false;
-                }
-                email_pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-                if (!email.match(email_pattern)) {
-                    jQuery('#log_username').addClass('validation-failed');
-                    jQuery('#login_error').html('Địa chỉ email không hợp lệ.');
-                    jQuery('#log_username').focus();
-                    return false;
-                }
-                if (pass == '') {
-                    jQuery('#log_password').addClass('validation-failed');
-                    jQuery('#login_error').html('Vui lòng nhập mật khẩu đăng nhập.');
-                    jQuery('#log_password').focus();
-                    return false;
-                }
-                captcha = jQuery('#txtCaptcha').val();
-        if (captcha == '') {
-            jQuery('#txtCaptcha').addClass('validation-failed');
-            jQuery('#login_error').html('Chưa nhập mã xác nhận.');
-            jQuery('#txtCaptcha').focus();
-            return false;
+      } 
+
+      
+      /* Set up the container for the leaves */
+      .leaves-container {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+      }
+      
+      /* Style for the individual leaves */
+      .leaf {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #9ac23c00;
+        border-radius: 50%;
+        animation: falling 8s ease-in-out infinite;
+      }
+
+      /* Keyframe animation for the falling leaves */
+      @keyframes falling {
+        0% {
+          transform: translateY(-10%);
         }
-                jQuery.ajax({
-                    type: "POST",
-                    url: "/Ajax/CheckAccount.aspx/CheckAccountLogin",
-                    data: '{email: "' + email + '", password: "' + pass + '", captcha: "' + captcha + '" }',
-                    contentType: "application/json; charset=utf-8",
-                    dataType: "json",
-                    async: false,
-                    success: function (data) {
-                        if (data.d == '1') {
-                            jQuery('#login_error').html('Mật khẩu không đúng.');
-                            jQuery('#log_password').addClass('validation-failed');
-                            jQuery('#log_password').focus();
-                        }
-                        else if (data.d == '2') {
-                            jQuery('#login_error').html('Email không tồn tại vui lòng nhập lại.');
-                            jQuery('#log_username').addClass('validation-failed');
-                            jQuery('#log_username').focus();
-                        }
-                        else if (data.d == '3') {
-                            jQuery('#login_error').html('Tài khoản chưa kích hoạt: KÍCH HOẠT (or dùng) QUÊN MẬT KHẨU?.');
-                            jQuery('#log_username').addClass('validation-failed');
-                            jQuery('#log_username').focus();
-                        }
-                        else if (data.d == '4') {
-                            jQuery('#login_error').html('Tài khoản đã bị khóa! Liên hệ với BQT để được hỗ trợ.');
-                            jQuery('#log_username').addClass('validation-failed');
-                            jQuery('#log_username').focus();
-                        }
-                        else if (data.d == '-1') {
-                            jQuery('#login_error').html('Mã xác nhận không đúng.');
-                            jQuery('#txtCaptcha').addClass('validation-failed');
-                            jQuery('#txtCaptcha').focus();
-                        }
-                    }
-                });
-                if (jQuery('#login_error').html() != '') {
-                    return false;
-                } else {
-                    return true;
-                }
-            }
-        </script>
-        
-        <div class="modal fade" id="LoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header popup_header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <p class="modal-title text-center" id="myModalLabel">SHARECODE.VN</p>
-                    </div>
-                    <!-- <div id="loginPanel" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;btnLogin&#39;)"> -->
-	
-                        <div class="modal-body">
-                            <div class="row line-h">
-                                <div class="col-sm-4 title3 bold">ĐĂNG NHẬP</div>
-                                <div class="col-sm-8">(Hoặc) Đăng nhập &nbsp;<a title="Đăng nhập nhanh bằng tài khoản Facebook" class="loginBtn loginBtn-facebook" href="javascript:__doPostBack(&#39;ctl00$ctl00$ctl23&#39;,&#39;&#39;)">Log in</a>&nbsp;<a id="LinkButton1" title="Đăng nhập nhanh bằng tài khoản Google" class="loginBtn loginBtn-google" href="javascript:__doPostBack(&#39;ctl00$ctl00$LinkButton1&#39;,&#39;&#39;)">Log in</a></div>
-                            </div>
-                            <div class="line"></div>
-                            <br />
-                            <div class="row">
-                                <div class="col-xs-12">Bạn chưa có tài khoản ShareCode.vn? <a href="/dang-ki-tai-khoan.htm" class="agreen bold">Đăng ký ngay</a></div>
-                            </div>
-                            <br />
-                            <div class="form-horizontal">
-                                <div class="form-group">
-                                    <label for="inputEmail3" class="col-sm-4 control-label">Email <span class="text-error">*</span></label>
-                                    <div class="col-sm-6">
-                                        <input name="ctl00$ctl00$log_username" type="text" id="log_username" maxlength="50" placeholder="Vui lòng nhập email" class="form-control" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputPassword3" class="col-sm-4 control-label">Password <span class="text-error">*</span></label>
-                                    <div class="col-sm-6">
-                                        <input name="ctl00$ctl00$log_password" type="password" id="log_password" placeholder="******" class="form-control" />
-                                    </div>
-                                </div>
-                                 <div class="form-group">
-                                    <div class="col-sm-offset-4 col-sm-6">
-                                         <input name="ctl00$ctl00$txtCaptcha" type="text" maxlength="4" id="txtCaptcha" class="form-control alignleft" placeholder="Xác nhận" style="width:90px;" />
-                                                
-<script type="text/javascript">
-    function createCaptcha() {
-        jQuery.ajax({
-            type: "POST",
-            url: "/Ajax/CreateCaptcha.aspx/CaptchaUrl",
-            data: '{}',
-            contentType: "application/json; charset=utf-8",
-            dataType: "json",
-            async: false,
-            success: function (data) {
-                if (data.d != '') {
-                    $('.imgCaptcha').attr('src', data.d);
-                }
-                else
-                    $('.imgCaptcha').attr('src', '/Image/captcha.jpg');
-            }
-        });
-    }
-</script>
-<div style="height: 30px; width: 140px; float: left; margin-left: 10px;">
-    <img src="/assets/images/captcha.jpg" alt="captcha" class="imgCaptcha" height="30" width="80" />
-    <div class="aorange" style="float: right; width: 60px; margin-top: 6px; padding-left: 5px;"
-        onclick="return createCaptcha();">
-        Mã khác
-    </div>
-</div>
+        100% {
+          transform: translateY(3220%);
+        }
+      }
 
+      /* Position each leaf randomly within the container */
+      .leaf:nth-child(1) {
+        left: 5%;
+        top: -5%;
+        animation-delay: 0.5s;
+      }
+      .leaf:nth-child(2) {
+        left: 25%;
+        top: -10%;
+        animation-delay: 2s;
+      }
+      .leaf:nth-child(3) {
+        left: 45%;
+        top: -15%;
+        animation-delay: 3.5s;
+      }
+      .leaf:nth-child(4) {
+        left: 65%;
+        top: -20%;
+        animation-delay: 1s;
+      }
+      .leaf:nth-child(5) {
+        left: 85%;
+        top: -25%;
+        animation-delay: 2.5s;
+      }
+      .leaf:nth-child(6) {
+        left: 95%;
+        top: -15%;
+        animation-delay: 2.5s;
+      }
 
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-sm-offset-4 col-sm-6">
-                                        
-                                        <a href="/quen-mat-khau.htm" target="_blank" class="aorange">Quên mật khẩu?</a>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-sm-offset-4 col-sm-6">
-                                        <div class="text-error" id="login_error">&nbsp;</div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-sm-offset-4 col-sm-6">
-                                        <a onclick="return fosp_login();" id="btnLogin" class="button-orange" href="javascript:__doPostBack(&#39;ctl00$ctl00$btnLogin&#39;,&#39;&#39;)"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i>&nbsp; Đăng nhập</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    
-</div>
-                    <div class="line_orn"></div>
-                    <div class="modal-footer">
-                        <p class="text-center">ShareCode.vn Cộng đồng chia sẻ và download source code</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      .leaf:nth-child(7) {
+        left: 55%;
+        top: -15%;
+        animation-delay: 1.5s;
+      }
 
-        
-    <div class="columns-container">
-        <div class="container" id="columns">
-            <div class="breadcrumb clearfix" itemscope itemtype="http://schema.org/BreadcrumbList">
-                <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                <a itemprop="item" class="agreen" href="/" title="Trở lại trang chủ">Trang chủ<meta itemprop="name"  content="sharecode.vn"  /></a>
-                     <meta itemprop="position" content="1" />
-                </span>
-                <span class="navigation-pipe">&nbsp;</span>
-                
-    <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a href="/ngon-ngu-lap-trinh/html-template-25.htm" id="mainbody_breadcrumb_PathCate" itemprop="item" class="agreen" title="Danh mục Html &amp; Template"><span itemprop="name">Html & Template</span></a>
-        <meta itemprop="position" content="2" />
-    </span>
-    <span class="navigation-pipe">&nbsp;</span>
-    <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a href="/the-loai-source-code/website-1.htm" id="mainbody_breadcrumb_PathType" itemprop="item" class="agreen" title="Thể loại Website"><span itemprop="name">Website</span></a>
-        <meta itemprop="position" content="3" />
-    </span>
-    <span class="navigation-pipe">&nbsp;</span>
-     <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-    <a href="/source-code/source-code-web-html-css-javascript-giao-dien-website-book-tour-du-lich-tourtravel-website-29424.htm" id="mainbody_breadcrumb_PathLink" class="agreen" itemprop="item">
-        <span id="mainbody_breadcrumb_PathLinkTitle" itemprop="name">Source code web HTML CSS Javascript giao diện website book tour du lịch TOUR-TRAVEL Website</span>
-    </a><meta itemprop="position" content="4" /></span>
+      .leaf:nth-child(8) {
+        left: 20%;
+        top: -15%;
+        animation-delay: 1.0s;
+      }
+      
+      .login-sqr{
+        position:absolute; 
+        top: 100px;
+        left: 580px;
+        width: 350px;
+        height: 300px;
+        padding-top: 20;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color:rgba(255, 255, 255, 0.26);
+        backdrop-filter: blur(10px);
+        z-index: -5;
+        border-radius: 20px;
 
-            </div>
-            
-    <div class="row" itemscope itemtype="http://schema.org/Product">
-        <meta itemprop="url" content="https://sharecode.vn/source-code/source-code-web-html-css-javascript-giao-dien-website-book-tour-du-lich-tourtravel-website-29424.htm"/>
-        <div class="center_column col-xs-12 col-sm-9" id="center_column">
-            
-            <div id="mainbody_contentbody_upPannel">
-	
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="img-border">
-                                <img id="mainbody_contentbody_CodeImage" title="Download ngay Source code web HTML CSS Javascript giao diện website book tour du lịch TOUR-TRAVEL Website" class="img-val" itemprop="image" src="/FilesUpload/Code/source-code-web-html-css-javascript-giao-dien-website-book-tour-du-lich-tour-travel-website-15452.jpg" alt="Code web,Source code web,Share code,Website du lịch,giao diện web,Source website" />
-                            </div>
-                            <div class="text-center dt-gallery"><a href="#anh-demo" class="aorange"><span id="mainbody_contentbody_CountGallery">Xem 5 Ảnh demo</span></a></div>
+      }
 
-                        </div>
-                        <div class="col-sm-8 dt-center">
-                            <h1 id="mainbody_contentbody_TitleCode" class="dt-title bold" itemprop="name">Source code web HTML CSS Javascript giao diện website book tour du lịch TOUR-TRAVEL Website</h1>
-                            <span class="green dt-title bold text-nowrap">[Mã code <span id="mainbody_contentbody_Code" itemprop="productID">29424</span>]</span>
-                             <meta itemprop="mpn" content="29424"/>
-                                    <meta itemprop="sku" content="29424"/>
-                            <div class="row title5">
-                                <div class="col-md-6 col-lg-7 dt-sta-vie">
-                                    <div id="mainbody_contentbody_CodeRate" class="rateit rate-po" data-rateit-readonly="true" data-rateit-value="5"></div>
-                                    &nbsp;&nbsp;<span id="mainbody_contentbody_totalRate" class="text-nowrap">1 Đ&#225;nh gi&#225;</span>&nbsp;&nbsp; <a href="#danh-gia" class="text-nowrap"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Viết đánh giá</a>
-                                </div>
-                                <div class="col-md-6 col-lg-5 dt-sta-vie2 orange">
-                                    <i class="fa fa-download" aria-hidden="true"></i>&nbsp;<b id="mainbody_contentbody_DownloadCount">1032</b>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span class="dt-vie-ic">&nbsp;<b id="mainbody_contentbody_Views">5374</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span class="text-nowrap"><i class="fa fa-heart" aria-hidden="true"></i>&nbsp;<b id="mainbody_contentbody_Likes">21</b></span>
-                                </div>
-                            </div>
-                            <div class="line"></div>
-                            <div class="row">
-                                <div class="col-sm-10 col-md-8 dt-price">
-                                    <span class="bold">Phí tải: <span id="mainbody_contentbody_Copyright" class="green">Miễn ph&#237;</span></span>
-                                    
-                                </div>
-                                <div class="col-sm-2 col-md-4 dt-pri-btn text-center">
-                                    <a id="mainbody_contentbody_btnLike" title="Yêu thích code này" class="button-orange button-small LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$ctl00$mainbody$contentbody$btnLike&#39;,&#39;&#39;)"><i class="fa fa-heart line-h20" aria-hidden="true"></i><span class="hidden-sm">&nbsp; YÊU THÍCH</span></a>&nbsp;
-                                
-                                </div>
-                            </div>
-                            <div class="line"></div>
-                            <div class="row">
-                                <div class="col-md-7 dt-des">
-                                 <meta itemprop="brand" content="sharecode.vn" />
-                                    <meta itemprop="releaseDate" content="16/09/2021 3:04:52 CH" />
-                                    <div class="dt-col">Danh mục </div>
-                                    <div itemprop="material"><a href="/ngon-ngu-lap-trinh/html-template-25.htm" id="mainbody_contentbody_Lang2" class="aorange" target="_blank">Html &amp; Template</a></div>
-                                    <div class="dt-col">Thể loại </div>
-                                    <div itemprop="category"><a href="/the-loai-source-code/website-1.htm" id="mainbody_contentbody_Category2" class="aorange" target="_blank">Website</a></div>
-                                    <div class="dt-col">Nhóm code </div>
-                                    <div><a href="/code-mien-phi.htm" id="mainbody_contentbody_Group2" class="agreen" target="_blank">Code miễn ph&#237;</a> <span class="txt-colo" data-toggle="tooltip" data-placement="top" title="1-CODE MIỄN PHÍ (0Xu): Code học hỏi. 2-CODE THAM KHẢO (2Xu đến 99Xu): Phí tải code để tham khảo và phát triển. 3-CODE CHẤT LƯỢNG (>=100Xu): Code đảm bảo, thường có demo trực tiếp và được cam kết hỗ trợ từ tác giả."><i class="fa fa-info-circle" aria-hidden="true"></i></span></div>
-                                    <div class="dt-col">Ngày đăng </div>
-                                    <div id="mainbody_contentbody_Date2">16-9-2021</div>
-                                    <div class="dt-col">Loại file </div>
-                                    <div id="mainbody_contentbody_Type2">Code</div>
-                                    <div class="dt-col">Dung lượng </div>
-                                    <div id="mainbody_contentbody_Size">55 MB</div>
-                                </div>
-                                <div class="col-md-5 dt-dow-vie">
-                                    <a href="#Download" class="btn2 button-down bold" title="Download code này">&nbsp; DOWNLOAD</a>
-                                    
-                                </div>
-                            </div>
-                            <div class="line"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-8 col-sm-push-4">
-                            <div class="dt-help">
-                                <b>Hướng dẫn: &nbsp;&nbsp;</b>
-                                <a href="https://sharecode.vn/cau-hoi/huong-dan-cach-tai-code-mien-phi-14.htm" target="_blank" class="dt-tag">Tải code miễn phí</a>
-                                <a href="https://sharecode.vn/cau-hoi/huong-dan-cach-tai-code-co-phi-15.htm" target="_blank" class="dt-tag">Tải code có phí</a>
-                                <a href="https://sharecode.vn/cau-hoi/huong-dan-ho-tro-ki-thuat-16.htm" target="_blank" class="dt-tag">Hỗ trợ kĩ thuật</a>
-                            </div>
-                            <div class="dt-chk orange">
-                                
-                                
-                                <div class="it-chk">Không chứa mã độc</div>
-                                
-                                
-                                
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-sm-pull-8">
-                            <div class="text-center dt-same">
-                                <a href="#code-giong"><span class="hidden-sm">Xem thêm </span><strong>CODE GẦN GIỐNG</strong></a>
-                            </div>
-                            <div class="dt-help">
-                                
-                                        <a class="dt-tag" target="_blank" href='/tu-khoa/code-web-995.htm' class="search_tagkey2">code web</a>
-                                    
-                                        <a class="dt-tag" target="_blank" href='/tu-khoa/source-code-web-13790.htm' class="search_tagkey2">source code web</a>
-                                    
-                                        <a class="dt-tag" target="_blank" href='/tu-khoa/share-code-891.htm' class="search_tagkey2">share code</a>
-                                    
-                                        <a class="dt-tag" target="_blank" href='/tu-khoa/website-du-lich-5.htm' class="search_tagkey2">Website du lịch</a>
-                                    
-                                        <a class="dt-tag" target="_blank" href='/tu-khoa/giao-dien-web-300.htm' class="search_tagkey2">giao diện web</a>
-                                    
-                                        <a class="dt-tag" target="_blank" href='/tu-khoa/source-website-1362.htm' class="search_tagkey2">Source website</a>
-                                    
-                            </div>
-                        </div>
-                    </div>
-                    <br />
-                    <div class="dt-sub" title="Mô tả ngắn">
-                        <h4 class="title1" itemprop="description">
-                            Source code html css được mình code thuần lại, để mọi người tham khảo và dùng để làm đồ án.</h4>
-                    </div>
-                    <br /> 
-                    <span class="dt-box-title bold">MÔ TẢ CHI TIẾT</span>
-                    <div class="dt-box entry-detail">
-                        <p style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; background: transparent; outline: 0px; vertical-align: top; color: rgb(126, 89, 42); font-family: Tahoma, Arial, sans-serif;">
-	Source code web được mình code thuần bằng HTML và CSS.</p>
-<p style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; background: transparent; outline: 0px; vertical-align: top; color: rgb(126, 89, 42); font-family: Tahoma, Arial, sans-serif;">
-	Phân chia bố cục rõ ràng.</p>
-<p style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; background: transparent; outline: 0px; vertical-align: top; color: rgb(126, 89, 42); font-family: Tahoma, Arial, sans-serif;">
-	Có reponsive trên mọi thiết bị.</p>
-
-                        
-                        <p id="anh-demo">&nbsp;</p>
-                        <div id="mainbody_contentbody_divGalleryImage" class="dt-img">
-                            <b>HÌNH ẢNH DEMO</b>
-                            <br />
-                            <br />
-                            
-                                    <div class="text-center">
-                                        <image src='/FilesUpload/CodeUpload/source-code-web-html-css-javascript-giao-dien-website-book-tour-du-lich-tour-travel-website-213429.jpg' alt="Code web,Source code web,Share code,Website du lịch,giao diện web,Source website" title="Download Source code web HTML CSS Javascript giao diện website book tour du lịch TOUR-TRAVEL Website ngay!" class="dt-max-img"></image>
-                                    </div>
-                                    <br />
-                                
-                                    <div class="text-center">
-                                        <image src='/FilesUpload/CodeUpload/source-code-web-html-css-javascript-giao-dien-website-book-tour-du-lich-tour-travel-website-213430.jpg' alt="Code web,Source code web,Share code,Website du lịch,giao diện web,Source website" title="Download Source code web HTML CSS Javascript giao diện website book tour du lịch TOUR-TRAVEL Website ngay!" class="dt-max-img"></image>
-                                    </div>
-                                    <br />
-                                
-                                    <div class="text-center">
-                                        <image src='/FilesUpload/CodeUpload/source-code-web-html-css-javascript-giao-dien-website-book-tour-du-lich-tour-travel-website-213431.jpg' alt="Code web,Source code web,Share code,Website du lịch,giao diện web,Source website" title="Download Source code web HTML CSS Javascript giao diện website book tour du lịch TOUR-TRAVEL Website ngay!" class="dt-max-img"></image>
-                                    </div>
-                                    <br />
-                                
-                                    <div class="text-center">
-                                        <image src='/FilesUpload/CodeUpload/source-code-web-html-css-javascript-giao-dien-website-book-tour-du-lich-tour-travel-website-213432.jpg' alt="Code web,Source code web,Share code,Website du lịch,giao diện web,Source website" title="Download Source code web HTML CSS Javascript giao diện website book tour du lịch TOUR-TRAVEL Website ngay!" class="dt-max-img"></image>
-                                    </div>
-                                    <br />
-                                
-                                    <div class="text-center">
-                                        <image src='/FilesUpload/CodeUpload/source-code-web-html-css-javascript-giao-dien-website-book-tour-du-lich-tour-travel-website-213433.jpg' alt="Code web,Source code web,Share code,Website du lịch,giao diện web,Source website" title="Download Source code web HTML CSS Javascript giao diện website book tour du lịch TOUR-TRAVEL Website ngay!" class="dt-max-img"></image>
-                                    </div>
-                                    <br />
-                                
-                        </div>
-                        <p class="alignright" id="huong-dan-cai-dat">Nguồn: Sharecode.vn</p>
-                    </div>
-                    <br />
-                    <br />
-                    <span class="dt-box-title bold">HƯỚNG DẪN CÀI ĐẶT</span>
-                    <div class="dt-box entry-detail">
-                        
-                        <span id="Download">&nbsp;</span>
-                        <br />
-                    </div>
-                    <div class="clear" style="height: 40px;">&nbsp;</div>
-                    <div class="dt-down">
-                        <div class="dt-down2">
-                            <div class="col-sm-7 col-md-8">
-                                <div class="bold title3">LINK DOWNLOAD</div>
-                                <h2 id="mainbody_contentbody_FileName" class="dt-file">tour and travel website.rar <span>[55 MB]</span></h2>
-                                <div id="mainbody_contentbody_Status" class="dt-true-ic bold">File đ&#227; kiểm duyệt</div>
-                                <a id="code-giong" class="aorange  text-nowrap dt-action" role="button" data-toggle="collapse" href="#collError" aria-expanded="false" aria-controls="collError"><i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp;Báo lỗi (or) Gửi hỗ trợ</a> &nbsp;&nbsp;&nbsp;
-                                 
-                                <a data-toggle="modal" data-target="#LoginForm" onclick="createCaptcha();" role="button" class="aorange text-nowrap dt-action" href="#"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;Báo vi phạm bản quyền</a>
-                                
-                            </div>
-                            <div class="col-sm-5 col-md-4 text-center">
-                                <strong>Pass giải nén</strong> (Nếu có):<br />
-                                <span class="green">sharecode.vn</span>
-                                <a onclick="createCaptcha();" id="mainbody_contentbody_btnLinkMain" title="Download Source code web HTML CSS Javascript giao diện website book tour du lịch TOUR-TRAVEL Website ngay!" class="btn2 button-down2" data-target="#LoginForm" role="button" data-toggle="modal" href="javascript:__doPostBack(&#39;ctl00$ctl00$mainbody$contentbody$btnLinkMain&#39;,&#39;&#39;)"><div class="btn-box">
-                                        <div class="btn-ic"></div>
-                                        <div class="btn-txt bold">
-                                            DOWNLOAD<br />
-                                            <span id="mainbody_contentbody_divPrice2">(Miễn ph&#237;)</span>
-                                        </div>
-                                    </div></a>
-                                
-                                 
-                             <a data-toggle="modal" data-target="#LoginForm" onclick="createCaptcha();" role="button" class="button-down2 button-yellow" title="Đăng code mới" id="btUpSt">
-                                             <div>Bạn có code hay</div>
-                                                           <div> <i class="fa fa-cloud-upload fa-lg" aria-hidden="true"></i>ĐĂNG BÁN NGAY</div>
-                                        </a>
-                  
-
-                    
-                            </div>
-                            <div class="col-xs-12">
-                                <div class="collapse" id="collError">
-                                    <div class="well">
-                                        <textarea name="ctl00$ctl00$mainbody$contentbody$txtError" rows="3" cols="20" id="mainbody_contentbody_txtError" class="form-control send-sp" placeholder="Nhập mô tả lỗi (or) nội dung yêu cầu hỗ trợ...">
-</textarea>
-                                         <div class="text-error" id="error_err"></div>
-                                        
-                                        
-                                        <a data-toggle="modal" data-target="#LoginForm" onclick="createCaptcha();" role="button" class="button-orange button-small dt-note line-h">Gửi ngay</a>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row banner-bottom">
-                        <div class="col-sm-6">
-                            <div class="banner-boder-zoom">
-                                <a href="/dang-ki-ten-mien.htm">
-                                    <img alt="Kiểm tra và đăng kí tên miền" class="img-responsive" src="/assets/images/banner-domain2.jpg" /></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="banner-boder-zoom">
-                                <a href="/hosting-ssd.htm">
-                                    <img alt="Đăng kí hosting ssd chất lượng cao" class="img-responsive" src="/assets/images/banner-hosting2.jpg" /></a>
-                            </div>
-                        </div>
-                    </div>
-                    <input type="hidden" name="ctl00$ctl00$mainbody$contentbody$hdCodeId" id="mainbody_contentbody_hdCodeId" value="29424" />
-                    <input type="hidden" name="ctl00$ctl00$mainbody$contentbody$hdIsShowDownload_now_modal" id="mainbody_contentbody_hdIsShowDownload_now_modal" value="false" />
-                    <input type="hidden" name="ctl00$ctl00$mainbody$contentbody$hdIsShowMessage_modal" id="mainbody_contentbody_hdIsShowMessage_modal" value="false" />
-                    <input type="hidden" name="ctl00$ctl00$mainbody$contentbody$hdIsShowDownload_modal" id="mainbody_contentbody_hdIsShowDownload_modal" value="false" />
-                    
-                    <div id="view-product-list" class="view-product-list">
-                        <h2 class="page-heading">
-                            <span class="page-heading-title">CODE GẦN GIỐNG</span>
-                        </h2>
-                        <ul class="row product-list style2 grid">
-                            
-                                    <li class="col-sx-12 col-sm-3" itemprop="isSimilarTo" itemscope itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="left-block">
-                                                        <a href='/source-code/source-code-web-truyen-tranh-framework-laravel-mysql-32872.htm'>
-                                                            <div class="img-box">
-                                                                <img class="img-responsive" itemprop="image" src="/FilesUpload/Code/[yeu-cau-bo-sung-video-huong-dan-cai-dat-code---vui-long-cap-nhat-lai-va-lien-he-zalo-ban-quan-tri-0981282756]-source-code-web-truyen-tranh-framework-laravel-mysql-104527.jpg" alt="Source code web truyện tranh framework laravel mysql" title="Download Source code web truyện tranh framework laravel mysql" />
-                                                            </div>
-                                                        </a>
-                                                        <div class="quick-view">
-                                                            <a title="Download code" class="search" href='/source-code/source-code-web-truyen-tranh-framework-laravel-mysql-32872.htm#Download'></a>
-                                                            <a id="mainbody_contentbody_rptOther_Button4_0" title="Yêu thích code này" class="heart LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$ctl00$mainbody$contentbody$rptOther$ctl00$Button4&#39;,&#39;&#39;)"></a>
-                                                            <a onclick="createCaptcha();" id="mainbody_contentbody_rptOther_Button5_0" title="Lưu code lại cho tôi" class="compare" data-toggle="modal" data-target="#LoginForm" role="button" href="javascript:__doPostBack(&#39;ctl00$ctl00$mainbody$contentbody$rptOther$ctl00$Button5&#39;,&#39;&#39;)"></a>
-                                                            
-                                                        </div>
-                                                        <div class="downview">
-                                                            <span class="view-count2">1122</span>
-                                                            <span class="down-count2">4</span>
-                                                        </div>
-                                                        <a class="cate" href='/ngon-ngu-lap-trinh/php-mysql-21.htm'>PHP & MySQL</a>
-                                                    </div>
-                                                    <div class="right-block">
-                                                        <a itemprop="url" href='/source-code/source-code-web-truyen-tranh-framework-laravel-mysql-32872.htm'>
-                                                            <h2 itemprop="name" class="product-name bold" title="Download Source code web truyện tranh framework laravel mysql">Source code web truyện tranh framework laravel mysql</h2>
-                                                        </a>
-                                                        <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="5"/><meta itemprop="reviewCount" content="1"/><meta itemprop="bestRating" content="5" /></div>
-                                                        
-                                                    </div>
-                                                </div>
-                                                <meta itemprop="productID" content="32872" />
-                                                <meta itemprop="sku" content="32872" />
-                                            <meta itemprop="mpn" content="32872" />
-                                                <meta itemprop="brand" content="sharecode.vn" />
-                                                <meta itemprop="releaseDate" content="03/11/2022 11:19:45 CH" />
-                                                <meta itemprop="category" content="Website" />
-                                                 <meta itemprop="description" content="Source code hầu như đủ chức năng của một website truyện tranh, có thể phát triển." />
-                                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                                                    <meta itemprop="priceCurrency" content="XU" />
-                                                    <meta itemprop="price" content="300" />
-                                                    <link itemprop="availability" href="http://schema.org/InStock" />
-                                                 <meta itemprop="priceValidUntil" content="03/11/2037 11:19:45 CH" />
-                                                <meta itemprop="url" content="https://sharecode.vn/source-code/source-code-web-truyen-tranh-framework-laravel-mysql-32872.htm" />
-                                                </span>
-                                                <span itemprop="review" itemscope itemtype="http://schema.org/Review">
-                                                <meta itemprop="datePublished" content="03/11/2022 11:19:45 CH" />
-                                                <meta itemprop="author" content="Hải Đăng" />
-                                               <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-                                                   <meta itemprop="worstRating" content="1"/>
-                                                   <meta itemprop="ratingValue" content="5">
-                                                   <meta itemprop="bestRating" content="5">
-                                               </span>
-                                            </span>
-                                            </li>
-                                
-                                    <li class="col-sx-12 col-sm-3" itemprop="isSimilarTo" itemscope itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="left-block">
-                                                        <a href='/source-code/app-chat-realtime-reactjs-nodejs-zalo-clone-32836.htm'>
-                                                            <div class="img-box">
-                                                                <img class="img-responsive" itemprop="image" src="/FilesUpload/Code/app-chat-realtime-reactjs-nodejs---zalo-clone-13370.jpg" alt="App chat realtime Reactjs Nodejs - Zalo clone" title="Download App chat realtime Reactjs Nodejs - Zalo clone" />
-                                                            </div>
-                                                        </a>
-                                                        <div class="quick-view">
-                                                            <a title="Download code" class="search" href='/source-code/app-chat-realtime-reactjs-nodejs-zalo-clone-32836.htm#Download'></a>
-                                                            <a id="mainbody_contentbody_rptOther_Button4_1" title="Yêu thích code này" class="heart LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$ctl00$mainbody$contentbody$rptOther$ctl01$Button4&#39;,&#39;&#39;)"></a>
-                                                            <a onclick="createCaptcha();" id="mainbody_contentbody_rptOther_Button5_1" title="Lưu code lại cho tôi" class="compare" data-toggle="modal" data-target="#LoginForm" role="button" href="javascript:__doPostBack(&#39;ctl00$ctl00$mainbody$contentbody$rptOther$ctl01$Button5&#39;,&#39;&#39;)"></a>
-                                                            
-                                                        </div>
-                                                        <div class="downview">
-                                                            <span class="view-count2">933</span>
-                                                            <span class="down-count2">0</span>
-                                                        </div>
-                                                        <a class="cate" href='/ngon-ngu-lap-trinh/html-template-25.htm'>Html & Template</a>
-                                                    </div>
-                                                    <div class="right-block">
-                                                        <a itemprop="url" href='/source-code/app-chat-realtime-reactjs-nodejs-zalo-clone-32836.htm'>
-                                                            <h2 itemprop="name" class="product-name bold" title="Download App chat realtime Reactjs Nodejs - Zalo clone">App chat realtime Reactjs Nodejs - Zalo clone</h2>
-                                                        </a>
-                                                        <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="5"/><meta itemprop="reviewCount" content="1"/><meta itemprop="bestRating" content="5" /></div>
-                                                        
-                                                    </div>
-                                                </div>
-                                                <meta itemprop="productID" content="32836" />
-                                                <meta itemprop="sku" content="32836" />
-                                            <meta itemprop="mpn" content="32836" />
-                                                <meta itemprop="brand" content="sharecode.vn" />
-                                                <meta itemprop="releaseDate" content="29/10/2022 1:37:00 CH" />
-                                                <meta itemprop="category" content="Phần mềm - Ứng dụng" />
-                                                 <meta itemprop="description" content="App chat realtime Reactjs Nodejs - Zalo clone Db: mongoDB Feature: login, signup, forgot pass, chat, add friend like facebook, upate avatar" />
-                                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                                                    <meta itemprop="priceCurrency" content="XU" />
-                                                    <meta itemprop="price" content="300" />
-                                                    <link itemprop="availability" href="http://schema.org/InStock" />
-                                                 <meta itemprop="priceValidUntil" content="29/10/2037 1:37:00 CH" />
-                                                <meta itemprop="url" content="https://sharecode.vn/source-code/app-chat-realtime-reactjs-nodejs-zalo-clone-32836.htm" />
-                                                </span>
-                                                <span itemprop="review" itemscope itemtype="http://schema.org/Review">
-                                                <meta itemprop="datePublished" content="29/10/2022 1:37:00 CH" />
-                                                <meta itemprop="author" content="Khả Hiếu Cao" />
-                                               <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-                                                   <meta itemprop="worstRating" content="1"/>
-                                                   <meta itemprop="ratingValue" content="5">
-                                                   <meta itemprop="bestRating" content="5">
-                                               </span>
-                                            </span>
-                                            </li>
-                                
-                                    <li class="col-sx-12 col-sm-3" itemprop="isSimilarTo" itemscope itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="left-block">
-                                                        <a href='/source-code/full-code-web-du-lich-khach-san-chuan-seo-kem-plugin-bao-mat-va-cache-ban-quyen-co-key-32951.htm'>
-                                                            <div class="img-box">
-                                                                <img class="img-responsive" itemprop="image" src="/FilesUpload/Code/full-code-web-du-lich-khach-san-chuan-seo-kem-plugin-bao-mat-va-cache-plugin-seo-ban-quyen-co-key-171639.jpg" alt="Full code web du lịch, khách sạn chuẩn seo kèm plugin bảo mật và cache, plugin seo bản quyền có key" title="Download Full code web du lịch, khách sạn chuẩn seo kèm plugin bảo mật và cache, plugin seo bản quyền có key" />
-                                                            </div>
-                                                        </a>
-                                                        <div class="quick-view">
-                                                            <a title="Download code" class="search" href='/source-code/full-code-web-du-lich-khach-san-chuan-seo-kem-plugin-bao-mat-va-cache-ban-quyen-co-key-32951.htm#Download'></a>
-                                                            <a id="mainbody_contentbody_rptOther_Button4_2" title="Yêu thích code này" class="heart LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$ctl00$mainbody$contentbody$rptOther$ctl02$Button4&#39;,&#39;&#39;)"></a>
-                                                            <a onclick="createCaptcha();" id="mainbody_contentbody_rptOther_Button5_2" title="Lưu code lại cho tôi" class="compare" data-toggle="modal" data-target="#LoginForm" role="button" href="javascript:__doPostBack(&#39;ctl00$ctl00$mainbody$contentbody$rptOther$ctl02$Button5&#39;,&#39;&#39;)"></a>
-                                                            
-                                                        </div>
-                                                        <div class="downview">
-                                                            <span class="view-count2">784</span>
-                                                            <span class="down-count2">1</span>
-                                                        </div>
-                                                        <a class="cate" href='/ngon-ngu-lap-trinh/wordpress-29.htm'>WordPress</a>
-                                                    </div>
-                                                    <div class="right-block">
-                                                        <a itemprop="url" href='/source-code/full-code-web-du-lich-khach-san-chuan-seo-kem-plugin-bao-mat-va-cache-ban-quyen-co-key-32951.htm'>
-                                                            <h2 itemprop="name" class="product-name bold" title="Download Full code web du lịch, khách sạn chuẩn seo kèm plugin bảo mật và cache, plugin seo bản quyền có key">Full code web du lịch, khách sạn chuẩn seo kèm plugin bảo mật và cache, plugin seo bản quyền có key</h2>
-                                                        </a>
-                                                        <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="5"/><meta itemprop="reviewCount" content="1"/><meta itemprop="bestRating" content="5" /></div>
-                                                        
-                                                    </div>
-                                                </div>
-                                                <meta itemprop="productID" content="32951" />
-                                                <meta itemprop="sku" content="32951" />
-                                            <meta itemprop="mpn" content="32951" />
-                                                <meta itemprop="brand" content="sharecode.vn" />
-                                                <meta itemprop="releaseDate" content="16/11/2022 10:53:19 SA" />
-                                                <meta itemprop="category" content="Website" />
-                                                 <meta itemprop="description" content="Mã nguồn Website thiết kế tỉ mỉ sang trọng phù hợp với ngành du lịch, tour, khách sạn..., code chuẩn seo và tối ưu code cho người dùng có trải nghiệm nhanh nhất" />
-                                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                                                    <meta itemprop="priceCurrency" content="XU" />
-                                                    <meta itemprop="price" content="2000" />
-                                                    <link itemprop="availability" href="http://schema.org/InStock" />
-                                                 <meta itemprop="priceValidUntil" content="16/11/2037 10:53:19 SA" />
-                                                <meta itemprop="url" content="https://sharecode.vn/source-code/full-code-web-du-lich-khach-san-chuan-seo-kem-plugin-bao-mat-va-cache-ban-quyen-co-key-32951.htm" />
-                                                </span>
-                                                <span itemprop="review" itemscope itemtype="http://schema.org/Review">
-                                                <meta itemprop="datePublished" content="16/11/2022 10:53:19 SA" />
-                                                <meta itemprop="author" content="Kiến Gạo" />
-                                               <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-                                                   <meta itemprop="worstRating" content="1"/>
-                                                   <meta itemprop="ratingValue" content="5">
-                                                   <meta itemprop="bestRating" content="5">
-                                               </span>
-                                            </span>
-                                            </li>
-                                
-                                    <li class="col-sx-12 col-sm-3" itemprop="isSimilarTo" itemscope itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="left-block">
-                                                        <a href='/source-code/source-code-web-ban-hang-day-du-chuc-nang-ben-bankhoadmin-33056.htm'>
-                                                            <div class="img-box">
-                                                                <img class="img-responsive" itemprop="image" src="/FilesUpload/Code/source-code-web-ban-giay-the-thao-day-du-chuc-nang-ben-bankhoadmin-101046.jpg" alt="Full source code+báo cáo web bán giày thể thao đầy đủ chức năng bên bán,kho,admin" title="Download Full source code+báo cáo web bán giày thể thao đầy đủ chức năng bên bán,kho,admin" />
-                                                            </div>
-                                                        </a>
-                                                        <div class="quick-view">
-                                                            <a title="Download code" class="search" href='/source-code/source-code-web-ban-hang-day-du-chuc-nang-ben-bankhoadmin-33056.htm#Download'></a>
-                                                            <a id="mainbody_contentbody_rptOther_Button4_3" title="Yêu thích code này" class="heart LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$ctl00$mainbody$contentbody$rptOther$ctl03$Button4&#39;,&#39;&#39;)"></a>
-                                                            <a onclick="createCaptcha();" id="mainbody_contentbody_rptOther_Button5_3" title="Lưu code lại cho tôi" class="compare" data-toggle="modal" data-target="#LoginForm" role="button" href="javascript:__doPostBack(&#39;ctl00$ctl00$mainbody$contentbody$rptOther$ctl03$Button5&#39;,&#39;&#39;)"></a>
-                                                            
-                                                        </div>
-                                                        <div class="downview">
-                                                            <span class="view-count2">1388</span>
-                                                            <span class="down-count2">13</span>
-                                                        </div>
-                                                        <a class="cate" href='/ngon-ngu-lap-trinh/php-mysql-21.htm'>PHP & MySQL</a>
-                                                    </div>
-                                                    <div class="right-block">
-                                                        <a itemprop="url" href='/source-code/source-code-web-ban-hang-day-du-chuc-nang-ben-bankhoadmin-33056.htm'>
-                                                            <h2 itemprop="name" class="product-name bold" title="Download Full source code+báo cáo web bán giày thể thao đầy đủ chức năng bên bán,kho,admin">Full source code+báo cáo web bán giày thể thao đầy đủ chức năng bên bán,kho,admin</h2>
-                                                        </a>
-                                                        <div class="rateit" data-rateit-value="4,5"  data-rateit-readonly="true" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="4,5"/><meta itemprop="reviewCount" content="2"/><meta itemprop="bestRating" content="5" /></div>
-                                                        
-                                                    </div>
-                                                </div>
-                                                <meta itemprop="productID" content="33056" />
-                                                <meta itemprop="sku" content="33056" />
-                                            <meta itemprop="mpn" content="33056" />
-                                                <meta itemprop="brand" content="sharecode.vn" />
-                                                <meta itemprop="releaseDate" content="03/12/2022 8:44:51 CH" />
-                                                <meta itemprop="category" content="Website" />
-                                                 <meta itemprop="description" content="Code phù hợp cho báo cáo môn học yêu cầu code web.Đầy đủ file word báo cáo môn học và hướng dẫn cài đặt. Đầy đủ chức năng bên bán,bên kho và bên admin" />
-                                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                                                    <meta itemprop="priceCurrency" content="XU" />
-                                                    <meta itemprop="price" content="90" />
-                                                    <link itemprop="availability" href="http://schema.org/InStock" />
-                                                 <meta itemprop="priceValidUntil" content="03/12/2037 8:44:51 CH" />
-                                                <meta itemprop="url" content="https://sharecode.vn/source-code/source-code-web-ban-hang-day-du-chuc-nang-ben-bankhoadmin-33056.htm" />
-                                                </span>
-                                                <span itemprop="review" itemscope itemtype="http://schema.org/Review">
-                                                <meta itemprop="datePublished" content="03/12/2022 8:44:51 CH" />
-                                                <meta itemprop="author" content="Katarina" />
-                                               <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-                                                   <meta itemprop="worstRating" content="1"/>
-                                                   <meta itemprop="ratingValue" content="5">
-                                                   <meta itemprop="bestRating" content="5">
-                                               </span>
-                                            </span>
-                                            </li>
-                                
-                        </ul>
-                    </div>
-                    <div id="mainbody_contentbody_ucSuggest_upPannel">
-		
-        <div id="view-product-list" class="view-product-list">
-            <h2 class="page-heading">
-                <span id="mainbody_contentbody_ucSuggest_divTitle" class="page-heading-title">CODE GỢI &#221; CHO BẠN</span>
-            </h2>
-            <ul class="row product-list style2 grid">
-                
-                        <li class="col-sx-12 col-sm-3" itemprop="isRelatedTo" itemscope itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="left-block">
-                                                        <a href='/source-code/sharecode-auto-send-mail-ung-dung-gui-mail-35690.htm'>
-                                                            <div class="img-box">
-                                                                <img class="img-responsive" itemprop="image" src="/FilesUpload/Code/share-free-code-auto-send-mail-ung-dung-gui-mail-111251.jpg" alt="Share free code Auto send mail ứng dụng gửi mail" title="Download Share free code Auto send mail ứng dụng gửi mail" />
-                                                            </div>
-                                                        </a>
-                                                        <div class="quick-view">
-                                                            <a title="Download code" class="search" href='/source-code/sharecode-auto-send-mail-ung-dung-gui-mail-35690.htm#Download'></a>
-                                                            <a id="mainbody_contentbody_ucSuggest_rptOtherCode_Button4_0" title="Yêu thích code này" class="heart LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$ctl00$mainbody$contentbody$ucSuggest$rptOtherCode$ctl00$Button4&#39;,&#39;&#39;)"></a>
-                                                            <a onclick="createCaptcha();" id="mainbody_contentbody_ucSuggest_rptOtherCode_Button5_0" title="Lưu code lại cho tôi" class="compare" data-toggle="modal" data-target="#LoginForm" role="button" href="javascript:__doPostBack(&#39;ctl00$ctl00$mainbody$contentbody$ucSuggest$rptOtherCode$ctl00$Button5&#39;,&#39;&#39;)"></a>
-                                                            
-                                                        </div>
-                                                        <div class="downview">
-                                                            <span class="view-count2">575</span>
-                                                            <span class="down-count2">56</span>
-                                                        </div>
-                                                        <a class="cate" href='/ngon-ngu-lap-trinh/visual-c-17.htm'>Visual C#</a>
-                                                    </div>
-                                                    <div class="right-block">
-                                                        <a itemprop="url" href='/source-code/sharecode-auto-send-mail-ung-dung-gui-mail-35690.htm'>
-                                                            <h3 itemprop="name" class="product-name bold" title="Download Share free code Auto send mail ứng dụng gửi mail">Share free code Auto send mail ứng dụng gửi mail</h3>
-                                                        </a>
-                                                        <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="5"/><meta itemprop="reviewCount" content="1"/><meta itemprop="bestRating" content="5" /></div>
-                                                    </div>
-                                                </div>
-                                                <meta itemprop="productID" content="35690" />
-                                                <meta itemprop="sku" content="35690" />
-                                            <meta itemprop="mpn" content="35690" />
-                                                <meta itemprop="brand" content="sharecode.vn" />
-                                                <meta itemprop="releaseDate" content="25/03/2023 11:24:51 CH" />
-                                                <meta itemprop="category" content="Phần mềm - Ứng dụng" />
-                                                 <meta itemprop="description" content="Chương trình gửi nhiều mail cùng lúc thao tác dễ dàng với người dùng. Code dễ phát triển." />
-                                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                                                    <meta itemprop="priceCurrency" content="XU" />
-                                                    <meta itemprop="price" content="0" />
-                                                    <link itemprop="availability" href="http://schema.org/InStock" />
-                                                 <meta itemprop="priceValidUntil" content="25/03/2038 11:24:51 CH" />
-                                                <meta itemprop="url" content="https://sharecode.vn/source-code/sharecode-auto-send-mail-ung-dung-gui-mail-35690.htm" />
-                                                </span>
-                                                <span itemprop="review" itemscope itemtype="http://schema.org/Review">
-                                                <meta itemprop="datePublished" content="25/03/2023 11:24:51 CH" />
-                                                <meta itemprop="author" content="Hoàng Huy" />
-                                               <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-                                                   <meta itemprop="worstRating" content="1"/>
-                                                   <meta itemprop="ratingValue" content="5">
-                                                   <meta itemprop="bestRating" content="5">
-                                               </span>
-                                            </span>
-                                            </li>
-                    
-                        <li class="col-sx-12 col-sm-3" itemprop="isRelatedTo" itemscope itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="left-block">
-                                                        <a href='/source-code/giao-dien-trang-quan-ly-admin-dashboard-cho-quan-ly-ban-hang-day-du-chuc-nang-35688.htm'>
-                                                            <div class="img-box">
-                                                                <img class="img-responsive" itemprop="image" src="/FilesUpload/Code/[lien-he-zalo-ban-quan-tri-0981282756-xac-minh-code-co-nguon-goc-mua-lai-tren-nguon-chinh-thong]giao-dien-trang-quan-ly-admin-dashboard-cho-quan-ly-ban-hang-day-du-chuc-nang-13484.jpg" alt="Giao diện trang quản lý (admin dashboard) cho quản lý bán hàng đầy đủ tính năng" title="Download Giao diện trang quản lý (admin dashboard) cho quản lý bán hàng đầy đủ tính năng" />
-                                                            </div>
-                                                        </a>
-                                                        <div class="quick-view">
-                                                            <a title="Download code" class="search" href='/source-code/giao-dien-trang-quan-ly-admin-dashboard-cho-quan-ly-ban-hang-day-du-chuc-nang-35688.htm#Download'></a>
-                                                            <a id="mainbody_contentbody_ucSuggest_rptOtherCode_Button4_1" title="Yêu thích code này" class="heart LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$ctl00$mainbody$contentbody$ucSuggest$rptOtherCode$ctl01$Button4&#39;,&#39;&#39;)"></a>
-                                                            <a onclick="createCaptcha();" id="mainbody_contentbody_ucSuggest_rptOtherCode_Button5_1" title="Lưu code lại cho tôi" class="compare" data-toggle="modal" data-target="#LoginForm" role="button" href="javascript:__doPostBack(&#39;ctl00$ctl00$mainbody$contentbody$ucSuggest$rptOtherCode$ctl01$Button5&#39;,&#39;&#39;)"></a>
-                                                            
-                                                        </div>
-                                                        <div class="downview">
-                                                            <span class="view-count2">648</span>
-                                                            <span class="down-count2">5</span>
-                                                        </div>
-                                                        <a class="cate" href='/ngon-ngu-lap-trinh/html-template-25.htm'>Html & Template</a>
-                                                    </div>
-                                                    <div class="right-block">
-                                                        <a itemprop="url" href='/source-code/giao-dien-trang-quan-ly-admin-dashboard-cho-quan-ly-ban-hang-day-du-chuc-nang-35688.htm'>
-                                                            <h3 itemprop="name" class="product-name bold" title="Download Giao diện trang quản lý (admin dashboard) cho quản lý bán hàng đầy đủ tính năng">Giao diện trang quản lý (admin dashboard) cho quản lý bán hàng đầy đủ tính năng</h3>
-                                                        </a>
-                                                        <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="5"/><meta itemprop="reviewCount" content="1"/><meta itemprop="bestRating" content="5" /></div>
-                                                    </div>
-                                                </div>
-                                                <meta itemprop="productID" content="35688" />
-                                                <meta itemprop="sku" content="35688" />
-                                            <meta itemprop="mpn" content="35688" />
-                                                <meta itemprop="brand" content="sharecode.vn" />
-                                                <meta itemprop="releaseDate" content="25/03/2023 11:52:12 SA" />
-                                                <meta itemprop="category" content="Website" />
-                                                 <meta itemprop="description" content="Template admin dashboard gồm nhiều chức năng phục vụ quản lý bán hàng, được xây dựng với các thư viện nổi tiếng như Bootstrap 5, JqueryUI,... Code đã được tối ưu để đảm bảo tối đa hiệu năng" />
-                                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                                                    <meta itemprop="priceCurrency" content="XU" />
-                                                    <meta itemprop="price" content="20" />
-                                                    <link itemprop="availability" href="http://schema.org/InStock" />
-                                                 <meta itemprop="priceValidUntil" content="25/03/2038 11:52:12 SA" />
-                                                <meta itemprop="url" content="https://sharecode.vn/source-code/giao-dien-trang-quan-ly-admin-dashboard-cho-quan-ly-ban-hang-day-du-chuc-nang-35688.htm" />
-                                                </span>
-                                                <span itemprop="review" itemscope itemtype="http://schema.org/Review">
-                                                <meta itemprop="datePublished" content="25/03/2023 11:52:12 SA" />
-                                                <meta itemprop="author" content="Otto" />
-                                               <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-                                                   <meta itemprop="worstRating" content="1"/>
-                                                   <meta itemprop="ratingValue" content="5">
-                                                   <meta itemprop="bestRating" content="5">
-                                               </span>
-                                            </span>
-                                            </li>
-                    
-                        <li class="col-sx-12 col-sm-3" itemprop="isRelatedTo" itemscope itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="left-block">
-                                                        <a href='/source-code/quan-ly-gui-xe-may-o-to-35689.htm'>
-                                                            <div class="img-box">
-                                                                <img class="img-responsive" itemprop="image" src="/FilesUpload/Code/code-android-quan-ly-gui-xe-may-o-to-11636.jpg" alt="Code Android Quản lý gửi xe máy, ô tô" title="Download Code Android Quản lý gửi xe máy, ô tô" />
-                                                            </div>
-                                                        </a>
-                                                        <div class="quick-view">
-                                                            <a title="Download code" class="search" href='/source-code/quan-ly-gui-xe-may-o-to-35689.htm#Download'></a>
-                                                            <a id="mainbody_contentbody_ucSuggest_rptOtherCode_Button4_2" title="Yêu thích code này" class="heart LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$ctl00$mainbody$contentbody$ucSuggest$rptOtherCode$ctl02$Button4&#39;,&#39;&#39;)"></a>
-                                                            <a onclick="createCaptcha();" id="mainbody_contentbody_ucSuggest_rptOtherCode_Button5_2" title="Lưu code lại cho tôi" class="compare" data-toggle="modal" data-target="#LoginForm" role="button" href="javascript:__doPostBack(&#39;ctl00$ctl00$mainbody$contentbody$ucSuggest$rptOtherCode$ctl02$Button5&#39;,&#39;&#39;)"></a>
-                                                            
-                                                        </div>
-                                                        <div class="downview">
-                                                            <span class="view-count2">234</span>
-                                                            <span class="down-count2">0</span>
-                                                        </div>
-                                                        <a class="cate" href='/ngon-ngu-lap-trinh/android-15.htm'>Android</a>
-                                                    </div>
-                                                    <div class="right-block">
-                                                        <a itemprop="url" href='/source-code/quan-ly-gui-xe-may-o-to-35689.htm'>
-                                                            <h3 itemprop="name" class="product-name bold" title="Download Code Android Quản lý gửi xe máy, ô tô">Code Android Quản lý gửi xe máy, ô tô</h3>
-                                                        </a>
-                                                        <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="5"/><meta itemprop="reviewCount" content="1"/><meta itemprop="bestRating" content="5" /></div>
-                                                    </div>
-                                                </div>
-                                                <meta itemprop="productID" content="35689" />
-                                                <meta itemprop="sku" content="35689" />
-                                            <meta itemprop="mpn" content="35689" />
-                                                <meta itemprop="brand" content="sharecode.vn" />
-                                                <meta itemprop="releaseDate" content="25/03/2023 8:47:12 CH" />
-                                                <meta itemprop="category" content="Phần mềm - Ứng dụng" />
-                                                 <meta itemprop="description" content="Nhận dạng biển số xe, quản lý gửi xe, thống kê số tiền theo từng tháng" />
-                                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                                                    <meta itemprop="priceCurrency" content="XU" />
-                                                    <meta itemprop="price" content="95" />
-                                                    <link itemprop="availability" href="http://schema.org/InStock" />
-                                                 <meta itemprop="priceValidUntil" content="25/03/2038 8:47:12 CH" />
-                                                <meta itemprop="url" content="https://sharecode.vn/source-code/quan-ly-gui-xe-may-o-to-35689.htm" />
-                                                </span>
-                                                <span itemprop="review" itemscope itemtype="http://schema.org/Review">
-                                                <meta itemprop="datePublished" content="25/03/2023 8:47:12 CH" />
-                                                <meta itemprop="author" content="DongHai" />
-                                               <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-                                                   <meta itemprop="worstRating" content="1"/>
-                                                   <meta itemprop="ratingValue" content="5">
-                                                   <meta itemprop="bestRating" content="5">
-                                               </span>
-                                            </span>
-                                            </li>
-                    
-                        <li class="col-sx-12 col-sm-3" itemprop="isRelatedTo" itemscope itemtype="http://schema.org/Product">
-                                                <div class="product-container">
-                                                    <div class="left-block">
-                                                        <a href='/source-code/source-code-quan-ly-sieu-thi-c-do-an-1-uneti-35694.htm'>
-                                                            <div class="img-box">
-                                                                <img class="img-responsive" itemprop="image" src="/FilesUpload/Code/[yeu-cau-bo-sung-video-cai-dat-code-video-demo---vui-long-cap-nhat-lai-va-lien-he-zalo-ban-quan-tri-0981282756]-source-code-quan-ly-sieu-thi-c-do-an-1-uneti-111913.jpg" alt="Source code quản lý siêu thị C# Đồ án 1 Uneti" title="Download Source code quản lý siêu thị C# Đồ án 1 Uneti" />
-                                                            </div>
-                                                        </a>
-                                                        <div class="quick-view">
-                                                            <a title="Download code" class="search" href='/source-code/source-code-quan-ly-sieu-thi-c-do-an-1-uneti-35694.htm#Download'></a>
-                                                            <a id="mainbody_contentbody_ucSuggest_rptOtherCode_Button4_3" title="Yêu thích code này" class="heart LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$ctl00$mainbody$contentbody$ucSuggest$rptOtherCode$ctl03$Button4&#39;,&#39;&#39;)"></a>
-                                                            <a onclick="createCaptcha();" id="mainbody_contentbody_ucSuggest_rptOtherCode_Button5_3" title="Lưu code lại cho tôi" class="compare" data-toggle="modal" data-target="#LoginForm" role="button" href="javascript:__doPostBack(&#39;ctl00$ctl00$mainbody$contentbody$ucSuggest$rptOtherCode$ctl03$Button5&#39;,&#39;&#39;)"></a>
-                                                            
-                                                        </div>
-                                                        <div class="downview">
-                                                            <span class="view-count2">430</span>
-                                                            <span class="down-count2">3</span>
-                                                        </div>
-                                                        <a class="cate" href='/ngon-ngu-lap-trinh/visual-c-17.htm'>Visual C#</a>
-                                                    </div>
-                                                    <div class="right-block">
-                                                        <a itemprop="url" href='/source-code/source-code-quan-ly-sieu-thi-c-do-an-1-uneti-35694.htm'>
-                                                            <h3 itemprop="name" class="product-name bold" title="Download Source code quản lý siêu thị C# Đồ án 1 Uneti">Source code quản lý siêu thị C# Đồ án 1 Uneti</h3>
-                                                        </a>
-                                                        <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="5"/><meta itemprop="reviewCount" content="1"/><meta itemprop="bestRating" content="5" /></div>
-                                                    </div>
-                                                </div>
-                                                <meta itemprop="productID" content="35694" />
-                                                <meta itemprop="sku" content="35694" />
-                                            <meta itemprop="mpn" content="35694" />
-                                                <meta itemprop="brand" content="sharecode.vn" />
-                                                <meta itemprop="releaseDate" content="26/03/2023 1:53:08 CH" />
-                                                <meta itemprop="category" content="Phần mềm - Ứng dụng" />
-                                                 <meta itemprop="description" content="Bài tập lớn đồ án 1 Uneti C# bao gồm báo cáo word , các sơ đồ phân rã chức năng" />
-                                                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                                                    <meta itemprop="priceCurrency" content="XU" />
-                                                    <meta itemprop="price" content="40" />
-                                                    <link itemprop="availability" href="http://schema.org/InStock" />
-                                                 <meta itemprop="priceValidUntil" content="26/03/2038 1:53:08 CH" />
-                                                <meta itemprop="url" content="https://sharecode.vn/source-code/source-code-quan-ly-sieu-thi-c-do-an-1-uneti-35694.htm" />
-                                                </span>
-                                                <span itemprop="review" itemscope itemtype="http://schema.org/Review">
-                                                <meta itemprop="datePublished" content="26/03/2023 1:53:08 CH" />
-                                                <meta itemprop="author" content="Phan Thanh Hải" />
-                                               <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-                                                   <meta itemprop="worstRating" content="1"/>
-                                                   <meta itemprop="ratingValue" content="5">
-                                                   <meta itemprop="bestRating" content="5">
-                                               </span>
-                                            </span>
-                                            </li>
-                    
-            </ul>
-        </div>
-    
-	</div>
-
-                    <br />
-                    <h2 class="page-heading" id="binh-luan">
-                        <span class="page-heading-title">BÌNH LUẬN</span>
-                    </h2>
-                    <br />
-                    <div class="cmt">
-                        <div class="cmt-img">
-                            <img src="../assets/images/avanta.png" id="mainbody_contentbody_img" width="45" height="45" />
-                        </div>
-                        <div class="cmt-box">
-                            <textarea name="ctl00$ctl00$mainbody$contentbody$txtComment" rows="3" cols="20" id="mainbody_contentbody_txtComment" class="form-control send-sp" placeholder="Nhập nội dung...">
-</textarea>
-                            <span class="text-error" id="error_cmt">&nbsp;</span>
-                            
-                            <a data-toggle="modal" data-target="#LoginForm" onclick="createCaptcha();" role="button" class="button-orange button-small alignright"><i class="fa fa-comment line-h20" aria-hidden="true"></i>&nbsp;BÌNH LUẬN</a>&nbsp;&nbsp;
-                        
-                        </div>
-                        <div style="display: none;" class="cmt-reply CommentReply">
-                            <div class="cmt-img">
-                                <img src="../assets/images/avanta.png" id="mainbody_contentbody_img2" width="45" height="45" />
-                            </div>
-                            <div class="cmt-box">
-                                <textarea name="ctl00$ctl00$mainbody$contentbody$txtCommentReply" rows="2" cols="20" id="mainbody_contentbody_txtCommentReply" class="form-control send-sp" placeholder="Nhập nội dung...">
-</textarea>
-                                
-                                <a data-toggle="modal" data-target="#LoginForm" onclick="createCaptcha();" role="button" class="button-orange button-small alignright"><i class="fa fa-comment line-h20" aria-hidden="true"></i>&nbsp;BÌNH LUẬN</a>&nbsp;&nbsp;
-                        
-                            </div>
-                        </div>
-                        <input type="hidden" name="ctl00$ctl00$mainbody$contentbody$hdCommentParent" id="mainbody_contentbody_hdCommentParent" />
-                        <input type="hidden" name="ctl00$ctl00$mainbody$contentbody$hdCommentReply" id="mainbody_contentbody_hdCommentReply" />
-                        
-                                <div class="cmt-item " id="cmt-23213">
-                                    <div class="cmt-img">
-                                        <a href='/thanh-vien/50_pham-ich-quang-437626.htm' target="_blank">
-                                            <img width="45" height="45" src="/assets/images/avanta.png" /></a>
-                                    </div>
-                                    <div class="cmt-box cmt-border">
-                                        <div class="cmt-head">
-                                            <a href='/thanh-vien/50_pham-ich-quang-437626.htm' target="_blank" class="bold agreen">50_Phạm Ích Quảng</a><span class="text-nowrap cmt-right"><span class="orange cmt-action" onclick="ReplyID(23213,23213)"><i class="fa fa-reply" aria-hidden="true"></i> Trả lời </span><span class="cmt-unlike">
-                                                <a href="javascript:__doPostBack(&#39;ctl00$ctl00$mainbody$contentbody$rptComment$ctl00$ctl00&#39;,&#39;&#39;)">Thích</a></span>&nbsp;<span class="txt-colo"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 0</span></span><span class="txt-colo cmt-right  cmt-date">10:12 - 11/10/2021</span>
-                                        </div>
-                                        <div class="cmt-content">
-                                            có thêt cho xem xin source code phần button book now k ạ.quangbn1609@gmail.com  em cảm ơn ạ
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                                <div id="Parent23213"></div>
-                            
-                        <div class="sortPagiBar clear">
-                            <div class="bottom-pagination">
-                                <nav id="mainbody_contentbody_PaggingBottom"><ul class='pagination'><li class='active'><a href=?page=1>1</a></li></ul></nav>
-                            </div>
-                        </div>
-                    </div>
-                    <br />
-                    <h2 class="page-heading" id="danh-gia">
-                        <span class="page-heading-title">ĐÁNH GIÁ</span>
-                    </h2>
-                    <br />
-                    <input type="hidden" name="ctl00$ctl00$mainbody$contentbody$hdRating" id="mainbody_contentbody_hdRating" value="5" />
-                    <div class="rat">
-                        <div class="row">
-                            
-                            <div class="col-sm-6 rat-col">
-                                <div class="col-sm-5" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-                                    <b>ĐIỂM TRUNG BÌNH</b><br />
-                                    <div id="mainbody_contentbody_CodeRate2" class="rateit" data-rateit-readonly="true" data-rateit-value="5"></div>
-                                    <br />
-                                    <span id="mainbody_contentbody_RateAvg" class="rat-point bold green" itemprop="ratingValue">5</span>
-                                    <meta itemprop="reviewCount" content="1" />
-                                </div>
-                                <div class="col-sm-7">
-                                    <b id="mainbody_contentbody_totalRate2" class="text-uppercase">1 Đ&#225;nh gi&#225;</b><br />
-                                    <div class="rateit" data-rateit-value="5" data-rateit-readonly="true"></div>
-                                    Code rất tốt <b id="mainbody_contentbody_rat5">(1)</b><br />
-                                    <div class="rateit" data-rateit-value="4" data-rateit-readonly="true"></div>
-                                    Code tốt <b id="mainbody_contentbody_rat4">(0)</b><br />
-                                    <div class="rateit" data-rateit-value="3" data-rateit-readonly="true"></div>
-                                    Code rất hay <b id="mainbody_contentbody_rat3">(0)</b><br />
-                                    <div class="rateit" data-rateit-value="2" data-rateit-readonly="true"></div>
-                                    Code hay <b id="mainbody_contentbody_rat2">(0)</b><br />
-                                    <div class="rateit" data-rateit-value="1" data-rateit-readonly="true"></div>
-                                    Bình thường <b id="mainbody_contentbody_rat1">(0)</b>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="rat-head bold">
-                            <div class="col-sm-4">
-                                Thành viên
-                            </div>
-                            <div class="col-sm-8">
-                                Nội dung đánh giá
-                            </div>
-                        </div>
-                        
-                                <div class="rat-item" itemprop="review" itemscope itemtype="http://schema.org/Review">
-                                    <div class="col-sm-4">
-                                        <span class="green bold" itemprop="author"><a href='/thanh-vien/chinh-357523.htm' target="_blank" class="bold agreen">Chính</a></span>
-                                        <div class="txt-colo"><span class="txt-colo">15:04 - 16/9/2021</span></div>
-                                        <meta itemprop="datePublished" content="16/09/2021 3:04:52 CH" />
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <div class="rateit" data-rateit-value="5" data-rateit-readonly="true"></div>
-                                        <strong itemprop="name">Code rất tốt</strong>
-                                        <br />
-                                        <span itemprop="description">Code rất tốt và phù hợp để phát triển</span>
-                                    </div>
-                                    <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-                                        <meta itemprop="worstRating" content="1" />
-                                        <meta itemprop="ratingValue" content="5" />
-                                        <meta itemprop="bestRating" content="5" />
-                                    </span>
-                                </div>
-                                <div class="line"></div>
-                            
-                        <div class="sortPagiBar">
-                            <div class="show-product-item">
-                                <!-- <select name="ctl00$ctl00$mainbody$contentbody$ddlShow" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$mainbody$contentbody$ddlShow\&#39;,\&#39;\&#39;)&#39;, 0)" id="mainbody_contentbody_ddlShow"> -->
-		<option selected="selected" value="show20">Hiển thị 20</option>
-		<option value="show50">Hiển thị 50</option>
-		<option value="showall">Tất cả</option>
-
-	</select>
-                            </div>
-                        </div>
-                    </div>
-                    <br />
-                
-</div>
-            
-        </div>
-        <div class="column col-xs-12 col-sm-3" id="left_column">
-            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                <div class="block left-module" id="boxSlogan">
-                    <div class="block_content">
-                        <div class="safe-img">
-                            <img src="/assets/images/safe.png" style="border: none;" alt="Mua code qua sharecode.vn để được bảo vệ" />
-                        </div>
-                        <div class="safe-txt bold">BẠN HÃY MUA CODE QUA <span class="orange">SHARECODE.VN</span> ĐỂ ĐƯỢC <span class="orange">BẢO VỆ</span></div>
-                    </div>
-                </div>
-                <div id="boxUserInfo" class="left-module box-border2 bg-colo" itemprop="seller" itemscope itemtype="http://schema.org/Organization">
-                    <div id="mainbody_contentbody_lblauthor" class="bold us-head">NGƯỜI ĐĂNG</div>
-                    <div class="pro-left">
-                        <a href="/thanh-vien/chinh-357523.htm" id="mainbody_contentbody_AvantaLink" target="_blank">
-                            <img src="/assets/images/avanta2.png" id="mainbody_contentbody_Avanta" class="prof_img" width="90" height="90" itemprop="image" title="Thành viên Chính Matto" alt="Chính Matto" />
-                        </a>
-                    </div>
-                    <div class="pro-right">
-                        <a href="/thanh-vien/chinh-357523.htm" id="mainbody_contentbody_UserName" target="_blank" class="agreen bold title4 pro-title" itemprop="url" title="Thành viên Chính Matto"><span id="mainbody_contentbody_NameText" itemprop="name">Ch&#237;nh</span></a>
-                        <div class="line"></div>
-                        <div class="pro-money us-bg-no">
-                            <span class="txt-colo">Miễn phí </span><b id="mainbody_contentbody_CodeFree">2 Code</b><br />
-                            <span class="txt-colo">Có phí </span><b id="mainbody_contentbody_CodePremium">2 Code</b><br />
-                        </div>
-
-                    </div>
-                    <div class="clear us-pad">&nbsp;</div>
-                    
-                </div>
-                <meta itemprop="priceCurrency" content="XU" />
-                <meta itemprop="price" content="0" />
-                <meta itemprop="priceValidUntil" content="16/09/2036 3:04:52 CH" />
-                <link itemprop="availability" href="http://schema.org/InStock" />
-                <meta itemprop="url" content="https://sharecode.vn/source-code/source-code-web-html-css-javascript-giao-dien-website-book-tour-du-lich-tourtravel-website-29424.htm"/>
-                <div class="left-module box-border2 bg-colo" id="boxShareFast">
-                    <div id="mainbody_contentbody_Div1" class="us-head"><b>CHIA SẺ NHANH</b> (CODE <span id="mainbody_contentbody_lblIDCode">29424</span>)</div>
-                    <div id="mainbody_contentbody_UpdatePanel1">
-	
-                            <div class="share-box">
-                                <a role="button" data-toggle="collapse" href="#boxSendEmail" aria-expanded="false" aria-controls="boxSendEmail">
-                                    <div class="share-email">
-                                        <img src="/assets/images/share-email.png" style="margin-right: 5px" /><br />
-                                        Gửi cho email</div>
-                                </a>
-                                
-                                <a data-toggle="modal" data-target="#LoginForm" onclick="createCaptcha();" role="button">
-                                    <div class="share-save">
-                                        <img src="/assets/images/share-save.png" /><br />
-                                        Lưu lại code</div>
-                                </a>
-
-                                
-                            </div>
-                            <!-- <div id="mainbody_contentbody_regPanel" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;mainbody_contentbody_btnSendEmail&#39;)"> -->
-		
-                            <div class="collapse" id="boxSendEmail" style="margin: 0px 10px">
-                                <input name="ctl00$ctl00$mainbody$contentbody$txtSendEmail" type="text" id="mainbody_contentbody_txtSendEmail" class="form-control send-sp" placeholder="Nhập email" />
-                                <span class="text-error" id="error_email"></span>
-                                <input type="submit" name="ctl00$ctl00$mainbody$contentbody$btnSendEmail" value="Gửi ngay" onclick="return SendEmailGT();" id="mainbody_contentbody_btnSendEmail" class="button-orange button-small dt-note" />
-                            </div>
-                                
-	</div>
-                        
-</div>
-                    <div class="dt-social">
-                 
-                        <div id="fb-share" class="fb-like" data-href="https://www.facebook.com/sharecode.vn" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-                    </div>
-
-                </div>
-                <div id="boxTopCode">
-                    
-<div class="block left-module">
-    <p class="title_block">CODE NỔI BẬT</p>
-    <div class="block_content">
-        <ul class="products-block best-sell">
-            
-                    <li>
-                        <div class="products-block-left">
-                            <a href='/source-code/template-website-phim-anime-cuc-dep-chuan-seo-2023-34286.htm'>
-                                <img src="/FilesUpload/Code/free-template-bloger-website-phim-anime-cuc-dep-chuan-seo-2023-10465.jpg" alt="web phim anime,Template anime,anime,template anime movie,template movie" title="Download Free Template bloger website phim anime cực đẹp chuẩn seo 2023">
-                            </a>
-                        </div>
-                        <div class="products-block-right">
-                            <p class="product-name">
-                                <a href='/source-code/template-website-phim-anime-cuc-dep-chuan-seo-2023-34286.htm'>
-                                    <h3 class="title2 bold" title="Download Free Template bloger website phim anime cực đẹp chuẩn seo 2023">Free Template bloger website phim anime cực đẹp chuẩn seo 2023</h3>
-                                </a>
-                            </p>
-                            <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true"></div>
-                            
-                        </div>
-                        <div class="products-block-bottom">
-                            <div><a class="cate" href='/ngon-ngu-lap-trinh/html-template-25.htm'>Html & Template</a>
-                                <span class="alignright view-count">3199</span>
-                                <span class="alignright down-count">533</span>
-                            </div>
-                        </div>
-                    </li>
-                
-                    <li>
-                        <div class="products-block-left">
-                            <a href='/source-code/template-website-xem-phim-anime-cuc-dep-chuan-seo-2022-34194.htm'>
-                                <img src="/FilesUpload/Code/[khong-dang-lai-code-da-co-tren-he-thong-trung-lap-ma-code-34194]-template-website-xem-phim-anime-cuc-dep-chuan-seo-2022-1734.jpg" alt="Template website phim anime,Template website phim,Template website xem phim anime,Template phim anime,website phim html,website anime html" title="Download Template website xem phim anime cực đẹp chuẩn seo 2022">
-                            </a>
-                        </div>
-                        <div class="products-block-right">
-                            <p class="product-name">
-                                <a href='/source-code/template-website-xem-phim-anime-cuc-dep-chuan-seo-2022-34194.htm'>
-                                    <h3 class="title2 bold" title="Download Template website xem phim anime cực đẹp chuẩn seo 2022">Template website xem phim anime cực đẹp chuẩn seo 2022</h3>
-                                </a>
-                            </p>
-                            <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true"></div>
-                            
-                        </div>
-                        <div class="products-block-bottom">
-                            <div><a class="cate" href='/ngon-ngu-lap-trinh/html-template-25.htm'>Html & Template</a>
-                                <span class="alignright view-count">2489</span>
-                                <span class="alignright down-count">456</span>
-                            </div>
-                        </div>
-                    </li>
-                
-                    <li>
-                        <div class="products-block-left">
-                            <a href='/source-code/giao-dien-trang-web-ban-hang-apple-chinh-hang-html-css-js-responsive-35676.htm'>
-                                <img src="/FilesUpload/Code/giao-dien-trang-web-ban-hang-apple-chinh-hang-html-css-js-responsive-132916.jpg" alt="website bán hàng,website bán điện thoại di động,website bán labtop,website thương mại điện tử,website điện máy,landing page đẹp" title="Download Giao diện trang Web bán hàng Apple chính hãng (html, css, js, responsive)">
-                            </a>
-                        </div>
-                        <div class="products-block-right">
-                            <p class="product-name">
-                                <a href='/source-code/giao-dien-trang-web-ban-hang-apple-chinh-hang-html-css-js-responsive-35676.htm'>
-                                    <h3 class="title2 bold" title="Download Giao diện trang Web bán hàng Apple chính hãng (html, css, js, responsive)">Giao diện trang Web bán hàng Apple chính hãng (html, css, js, responsive)</h3>
-                                </a>
-                            </p>
-                            <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true"></div>
-                            
-                        </div>
-                        <div class="products-block-bottom">
-                            <div><a class="cate" href='/ngon-ngu-lap-trinh/html-template-25.htm'>Html & Template</a>
-                                <span class="alignright view-count">1903</span>
-                                <span class="alignright down-count">8</span>
-                            </div>
-                        </div>
-                    </li>
-                
-                    <li>
-                        <div class="products-block-left">
-                            <a href='/source-code/website-design-html-css-js-realphone-33175.htm'>
-                                <img src="/FilesUpload/Code/website-design-html-css-js-realphone-20514.jpg" alt="CSS,HTML,JavaScript,HTML CSS JavaScript,Easy Tutorials,Code Free" title="Download Website Design HTML CSS JS : RealPhone">
-                            </a>
-                        </div>
-                        <div class="products-block-right">
-                            <p class="product-name">
-                                <a href='/source-code/website-design-html-css-js-realphone-33175.htm'>
-                                    <h3 class="title2 bold" title="Download Website Design HTML CSS JS : RealPhone">Website Design HTML CSS JS : RealPhone</h3>
-                                </a>
-                            </p>
-                            <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true"></div>
-                            
-                        </div>
-                        <div class="products-block-bottom">
-                            <div><a class="cate" href='/ngon-ngu-lap-trinh/html-template-25.htm'>Html & Template</a>
-                                <span class="alignright view-count">1804</span>
-                                <span class="alignright down-count">255</span>
-                            </div>
-                        </div>
-                    </li>
-                
-                    <li>
-                        <div class="products-block-left">
-                            <a href='/source-code/giao-dien-website-ban-dong-ho-33143.htm'>
-                                <img src="/FilesUpload/Code/giao-dien-website-ban-dong-ho-html5-143343.jpg" alt="giao diện website bán đồng hồ,html5 web bán đồng hồ,web bán đồng hồ,website bán đồng hồ" title="Download Giao diện website bán đồng hồ html5">
-                            </a>
-                        </div>
-                        <div class="products-block-right">
-                            <p class="product-name">
-                                <a href='/source-code/giao-dien-website-ban-dong-ho-33143.htm'>
-                                    <h3 class="title2 bold" title="Download Giao diện website bán đồng hồ html5">Giao diện website bán đồng hồ html5</h3>
-                                </a>
-                            </p>
-                            <div class="rateit" data-rateit-value="0"  data-rateit-readonly="true"></div>
-                            
-                        </div>
-                        <div class="products-block-bottom">
-                            <div><a class="cate" href='/ngon-ngu-lap-trinh/html-template-25.htm'>Html & Template</a>
-                                <span class="alignright view-count">1087</span>
-                                <span class="alignright down-count">143</span>
-                            </div>
-                        </div>
-                    </li>
-                
-        </ul>
-    </div>
-</div>
-
-                </div>
-                
-            </div>
-        </div>
-    </div>
-
-        </div>
-    </div>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Center the content */
      
-
+      
+      /* Style the login box */
+      .login-box {
+        position: relative;
+        top: -70%;
+        left: 38%;
+        max-width: 400px;
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        background-color:rgba(255, 255, 255, 0.26);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: -5;
+        text-align: center;
+      }
+      
+      /* Style the form elements */
+      label {
+        display: block;
+        margin-bottom: 2px;
+        font-weight: bold;
         
-<script src="/assets/js/floater_xlib.js"></script>
-<script type="text/javascript">
-
-    var slideTime = 600;
-    var floatAtBottom = false;
-    function pepsi_floating_init() {
-        xMoveTo('floating_banner_right', 887 - (1024 - screen.width), 0);
-
-        winOnResize(); // set initial position
-        xAddEventListener(window, 'resize', winOnResize, false);
-        xAddEventListener(window, 'scroll', winOnScroll, false);
-    }
-    function winOnResize() {
-        checkScreenWidth();
-        winOnScroll(); // initial slide
-    }
-    function winOnScroll() {
-        var y = xScrollTop();
-        if (floatAtBottom) {
-            y += xClientHeight() - xHeight('floating_banner_left');
-        }
-        document.getElementById('floating_banner_left').style.position = 'fixed';
-        document.getElementById('floating_banner_right').style.position = 'fixed';
-            if (y >= 185) {
-                xSlideTo('floating_banner_left', (document.body.clientWidth - 20 - 1170) / 2 - 150, 60, slideTime);
-                xSlideTo('floating_banner_right', (document.body.clientWidth - 20 + 1170) / 2 +50, 60, slideTime);
-            }
-            else {
-                xSlideTo('floating_banner_left', (document.body.clientWidth - 20 - 1170) / 2 - 150, 300 - y, slideTime);
-                xSlideTo('floating_banner_right', (document.body.clientWidth - 20 + 1170) / 2 +50, 300 - y, slideTime);
-            }
-    }
-    function checkScreenWidth() {
-        if (document.body.clientWidth < (1530)) {
-            document.getElementById('floating_banner_left').style.display = 'none';
-            document.getElementById('floating_banner_right').style.display = 'none';
-            if (document.getElementById('bannerCenter')!=null)
-            document.getElementById('bannerCenter').style.display = 'block';
-        }
-        else {
-            document.getElementById('floating_banner_left').style.display = '';
-            document.getElementById('floating_banner_right').style.display = '';
-            if (document.getElementById('bannerCenter') != null)
-            document.getElementById('bannerCenter').style.display = 'none';
-        }
-    }
-
-</script>
-
-<div id="floating_banner_left" style="text-align: right; position: absolute; overflow: hidden; width: 120px; z-index: 99999">
-    <div id="floating_banner_left_content">
-         <a href="https://sharecode.vn/su-kien/sieu-khuyen-mai-mua-code-gio-vang-nhan-hoan-xu-ngay-mung-dai-le-304-15--28.htm" target="_blank">
-            <img src="/assets/images/banner/thuong-upload-code.jpg" border="0" width="120" alt="" /></a><br />
-    </div>
-</div>
-<div id="floating_banner_right" style="text-align: left; position: absolute; overflow: hidden; width: 120px; z-index: 99999">
-    <div id="Div2">
-        <a href="https://sharecode.vn/su-kien/sieu-khuyen-mai-mua-code-gio-vang-nhan-hoan-xu-ngay-mung-dai-le-304-15--28.htm" target="_blank">
-            <img src="/assets/images/banner/khuyen-mai-upload-code.jpg" border="0" width="120" alt="" /></a><br />
-    </div>
-</div>
-
-  <script>
-
-      pepsi_floating_init();
-
-</script>
-
-        <div id="ctl24">
-	
-                <!-- Footer -->
-                <footer id="footer">
-                    <div class="container">
-                        <!-- introduce-box -->
-                        <div id="introduce-box" class="row">
-                            <div class="col-md-3">
-                                <div id="address-box">
-                                    <a href="/">
-                                        <img src="/assets/images/logo.png" alt="Sharecode.vn" /></a>
-                                    <div id="address-list">
-                                        <div class="tit-name">Hotline:</div>
-                                        <div class="tit-contain"><a href="tel:+84981282756" title="Click gọi ngay!">0981.282.756</a></div>
-                                        <div class="tit-name">Email:</div>
-                                        <div class="tit-contain"><a href="mailto:sharecode.contact@gmail.com" title="Click để gửi email!">Sharecode.contact@gmail.com</a></div>
-                                    </div>
-                                    <br />
-                                    <div class="social-link">
-                                        <a href="https://www.facebook.com/sharecode.vn"><i class="fa fa-facebook"></i></a>
-                                        <a href="https://www.youtube.com/channel/UCrmDzitLIGfSLYQsSe-j6WA"><i class="fa fa-youtube-play"></i></a>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <div class="introduce-title">VỀ CHÚNG TÔI</div>
-                                        <ul id="introduce-company" class="introduce-list">
-                                            <li><a href="/gioi-thieu.htm">Giới thiệu</a></li>
-                                            <li><a href="/quy-dinh-chung.htm">Quy định chung</a></li>
-                                            <li><a href="/chinh-sach-ban-code.htm">Chính sách bán code</a></li>
-                                            <li><a href="/cau-hoi.htm">Câu hỏi thường gặp</a></li>
-                                            <li><a href="/su-kien.htm">Sự kiện</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="introduce-title">HƯỚNG DẪN</div>
-                                        <ul id="introduce-Account" class="introduce-list">
-                                            <li><a href="https://sharecode.vn/cau-hoi/huong-dan-cach-tai-code-mien-phi-14.htm">Tải code miễn phí</a></li>
-                                            <li><a href="https://sharecode.vn/cau-hoi/huong-dan-cach-tai-code-co-phi-15.htm">Tải code có phí</a></li>
-                                            <li><a href="https://sharecode.vn/cau-hoi/huong-dan-nap-tien-vao-tai-khoan-8.htm">Hướng dẫn nạp tiền</a></li>
-                                            <li><a href="https://sharecode.vn/cau-hoi/huong-dan-rut-tien-tu-tai-khoan-7.htm">Hướng dẫn rút tiền</a></li>
-                                            <li><a href="https://sharecode.vn/cau-hoi/huong-dan-ho-tro-ki-thuat-16.htm">Hỗ trợ kĩ thuật</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="introduce-title">DỊCH VỤ MÁY CHỦ</div>
-                                        <ul id="Ul1" class="introduce-list">
-                                            <li><a href="/dang-ki-ten-mien.htm">Đăng kí tên miền</a></li>
-                                            <li><a href="/hosting-ssd.htm">Hosting SSD</a></li>
-                                            <li><a href="/vps-may-chu-ao.htm">Clould VPS</a></li>
-                                            <li><a href="/email-server.htm">Email Server</a></li>
-                                            <li><a href="/chung-thuc-ssl.htm">Chứng thực SSL</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div id="contact-box">
-                                    <div class="introduce-title">Gửi hỗ trợ - Góp ý</div>
-                                    <div>
-                                        <textarea name="ctl00$ctl00$txtComment" rows="2" cols="20" id="txtComment" class="form-control send-sp" placeholder="Nội dung &amp; liên hệ của bạn (Email, ĐT)" style="height:60px;width:100%;">
-</textarea>
-                                        <div id="errCmt" class="text-error"></div>
-                                    </div>
-                                    <br />
-                                    <div>
-                                        <a onclick=" return fosp_cmt();" id="btnSend" class="button-orange" href="javascript:__doPostBack(&#39;ctl00$ctl00$btnSend&#39;,&#39;&#39;)"><i class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp; GỬI NHANH</a>
-                                    </div>
-                                    <br />
-                                    <a href="/dang-ki-nhan-code.htm" class="agreen title5"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;Yêu cầu và Đăng kí nhận code</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="trademark-box" class="row">
-                            <div class="col-sm-12">
-                                <ul id="trademark-list">
-                                    <li id="payment-methods">Thanh toán đảm bảo</li>
-                                    <li>
-                                        <img src="/assets/images/b1.png" alt="ngan luong" />
-                                    </li>
-                                    <li>
-                                        <img src="/assets/images/b10.png" alt="bao kim" />
-                                    </li>
-                                    <li>
-                                        <img src="/assets/images/b11.png" alt="momo" />
-                                    </li>
-                                    <li>
-                                        <img src="/assets/images/b8.png" alt="paypal" />
-                                    </li>
-                                    <li>
-                                        <img src="/assets/images/b5.png" alt="vietcombank" />
-                                    </li>
-                                    <li>
-                                        <img src="/assets/images/b9.png" alt="vietin bank" />
-                                    </li>
-                                    <li>
-                                        <img src="/assets/images/b6.png" alt="agribank" />
-                                    </li>
-                                    <li>
-                                        <img src="/assets/images/b7.png" alt="bidv" />
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                        <div id="trademark-text-box" class="row">
-                            <div class="col-sm-12">
-                                <ul id="trademark-search-list" class="trademark-list">
-                                    <li class="trademark-text-tit">Top tìm kiếm</li>
-                                    <li><a href='/tu-khoa/game-3.htm'>Game</a></li>
-                                    <li><a href='/tu-khoa/phan-men-quan-ly-4.htm'>Phần mền quản lý</a></li>
-                                    <li><a href='/tu-khoa/website-gioi-thieu-32.htm'>Website giới thiệu</a></li>
-                                    <li><a href='/tu-khoa/quan-ly-sach-54.htm'>Quản lý sách</a></li>
-                                    <li><a href='/tu-khoa/web-tin-tuc-183.htm'>Web tin tức</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div id="footer-menu-box">
-                            <p class="text-center">
-                                Copyrights &#169; 2014 Sharecode.vn | <a href="/privacy-policy.htm" rel="nofollow">Privacy Policy</a> | Nội dung đã được bảo vệ bản quyền
-                                <a href="//www.dmca.com/Protection/Status.aspx?ID=e3cfb854-1733-4462-a9e8-0ef4661d6600" title="DMCA.com Protection Status" class="dmca-badge">
-                                    <img src="//images.dmca.com/Badges/dmca-badge-w150-5x1-09.png?ID=e3cfb854-1733-4462-a9e8-0ef4661d6600" alt="DMCA.com Protection Status"></a>
-                                <script src="//images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
-                            </p>
-                        </div>
-                    </div>
-                </footer>
-            
-</div>
-    </form>
-
-    <a href="#" class="scroll_top" title="Lên đầu" style="display: inline;"></a>
-    <!-- Script-->
-    <script type="text/javascript" src="/assets/lib/jquery/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="/assets/lib/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/assets/lib/select2/js/select2.min.js"></script>
-    <script type="text/javascript" src="/assets/lib/owl.carousel/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="/assets/js/jquery.actual.min.js"></script>
-    <script type="text/javascript" src="/assets/js/theme-script.js"></script>
-    <script type="text/javascript" src="/assets/lib/jquery-ui/jquery-ui.min.js"></script>
-    <script type="text/javascript">
-        $('#slSearch').on('change', function () {
-            $('#hdLangFilter').val($("#slSearch").val());
-        });
-    </script>
-    
-    <script type="text/javascript">
-        $('.carousel').carousel({
-            interval: 5000
-        })
-        $(document).ready(function () {
-            //duy tri alive: 5 minutes
-            setInterval("KeepSessionAlive()", 300000);
-            $('.txt-auto').autocomplete({
-                source: TagSuggest,
-                minLength: 2,
-                html: true
-            });
-            //chat face
-            $('.hisella-messages').animate({ bottom: '-350px' }).animate({ right: '-30px' }, 400, function () { $('#hisella-facebook').css('opacity', 0) }); $('#hisella-minimize').click(function () { if ($('#hisella-facebook').css('opacity') == 0) { $('#hisella-facebook').css('opacity', 1); $('.hisella-messages').animate({ right: '0' }).animate({ bottom: '0' }); } else { $('.hisella-messages').animate({ bottom: '-350px' }).animate({ right: '-30px' }, 400, function () { $('#hisella-facebook').css('opacity', 0) }); } })
-        });
-        //auto
-        (function ($) { var proto = $.ui.autocomplete.prototype, initSource = proto._initSource; function filter(array, term) { var matcher = new RegExp($.ui.autocomplete.escapeRegex(term), "i"); return $.grep(array, function (value) { return matcher.test($("<div>").html(value.label || value.value || value).text()); }); } $.extend(proto, { _initSource: function () { if (this.options.html && $.isArray(this.options.source)) { this.source = function (request, response) { response(filter(this.options.source, request.term)); }; } else { initSource.call(this); } }, _renderItem: function (ul, item) { return $("<li></li>").data("item.autocomplete", item).append($("<a></a>")[this.options.html ? "html" : "text"](item.label)).appendTo(ul); } }); })(jQuery);
-        var cache = {};
-        function TagSuggest(request, response) {
-            var term = request.term.toLowerCase();
-            if (term in cache) { response(cache[term]); return; }
-            $.ajax({
-                type: "POST",
-                url: "/Ajax/TagSuggest.aspx/TagAutocomplete",
-                data: '{tagname: "' + term + '"}',
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                async: false,
-                success: function (data) {
-                    var suggestions = [];
-                    var results = data.d;
-                    $.each(results, function (index, item) {
-                        try {
-                            var s = item.toLowerCase();
-                            suggestions.push({ label: s.replace(term, '<b>' + term + '</b>'), value: s });
-                        } catch (e) { }
-                    });
-                    cache[term] = suggestions;
-                    response(suggestions);
-                }
-            });
-        }
-        //fix đường dẫn khi login bằng facebook
-        if (window.location.hash == '#_=_') {
-            history.replaceState
-                ? history.replaceState(null, null, window.location.href.split('#')[0])
-                : window.location.hash = '';
-        }
-        function KeepSessionAlive() {
-            url = "/KeepSessionAlive.ashx?";
-            var xmlHttp = new XMLHttpRequest();
-            xmlHttp.open("GET", url, true);
-            xmlHttp.send();
-        }
-        function fosp_cmt() {
-            jQuery('#errCmt').html('');
-            jQuery('#errCmt').removeClass();
-            jQuery('#txtComment').removeClass('validation-failed');
-            if (jQuery('#txtComment').val() == '') {
-                jQuery('#errCmt').addClass('text-error');
-                jQuery('#txtComment').addClass('validation-failed');
-                jQuery('#errCmt').html('Vui lòng nhập nội dung và email của bạn.');
-                jQuery('#txtComment').focus();
-                return false;
-            }
-        }
-    </script>
-    
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-52977022-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <!-- Đặt thẻ này vào phần đầu hoặc ngay trước thẻ đóng phần nội dung của bạn. -->
-    <script src="https://apis.google.com/js/platform.js" async defer>
-  {lang: 'vi'}
-    </script>
-    <script type="application/ld+json">
-{ "@context" : "http://schema.org",
-  "@type" : "Organization",
-  "legalName" : "sharecode.vn",
-  "url" : "https://sharecode.vn",
-  "contactPoint" : [{
-    "@type" : "ContactPoint",
-    "telephone" : "+84981282756",
-    "contactType" : "customer service"
-  }],
-        "potentialAction" : {
-    "@type" : "SearchAction",
-    "target" : "https://sharecode.vn/tim-kiem.htm?tu-khoa={search_term}",
-    "query-input" : "required name=search_term"
-  } 
-}
-    </script>
-     
-    
-    
-    <div class="hisella-messages">
-        <div class="hisella-messages-outer">
-            <div id="hisella-minimize">&nbsp;HỖ TRỢ TRỰC TUYẾN</div>
-            <div id="hisella-facebook" class='fb-page' data-adapt-container-width='true' data-height='350' data-hide-cover='false' data-href='https://www.facebook.com/sharecode.vn' data-show-facepile='true' data-show-posts='false' data-small-header='false' data-tabs='messages' data-width='250'></div>
-        </div>
-    </div>
-    
-    
-    <script>
-        function ReplyID(parent, id) {
-            $('.CommentReply').appendTo('#Parent' + id);
-            $('#mainbody_contentbody_txtCommentReply').focus();
-            $('.CommentReply').show();
-            $('#mainbody_contentbody_hdCommentParent').val(parent);
-            $('#mainbody_contentbody_hdCommentReply').val(id);
-        }
-        function Rate(value) {
-            if (value == null)
-                return "";
-            else if (value == 1)
-                return "Bình thường";
-            else if (value == 2)
-                return "Code hay";
-            else if (value == 3)
-                return "Code rất hay";
-            else if (value == 4)
-                return "Code tốt";
-            else if (value == 5)
-                return "Code rất tốt";
-        }
-        function Rating() {
-            $('#rateit_star').rateit({ min: 0, max: 5, step: 1 });
-            $('#rateit_star').bind('rated', function (e) {
-                var value = $(this).rateit('value');
-                $('#mainbody_contentbody_hdRating').val(value);
-            });
-            $('#rateit_star').bind('over', function (event, value) {
-                $('#rateit_txt').text(Rate(value));
-            });
-            $('.rateit').rateit({ max: 5, step: 1 });
-        }
-        $(document).ready(function () {
-            //thay link share facebook
-            document.getElementById("fb-share").setAttribute("data-href", window.location.href);
-            $('.CommentReply').hide();
-            Rating();
-        });
-        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(function (evt, args) {
-            Rating();
-        });
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        });
-
-        function SendEmailGT() {
-            jQuery('#error_email').html('');
-            jQuery('#mainbody_contentbody_txtSendEmail').removeClass('validation-failed');
-            var email = jQuery('#mainbody_contentbody_txtSendEmail').val();
-           if (email.trim() == '') {
-               jQuery('#error_email').html('Vui lòng nhập địa chỉ email.');
-               jQuery('#mainbody_contentbody_txtSendEmail').addClass('validation-failed');
-                jQuery('#mainbody_contentbody_txtSendEmail').focus();
-                return false;
-            }
-            email_pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-            if (!email.match(email_pattern)) {
-                jQuery('#error_email').html('Địa chỉ email không hợp lệ.');
-                jQuery('#mainbody_contentbody_txtSendEmail').addClass('validation-failed');
-                jQuery('#mainbody_contentbody_txtSendEmail').focus();
-                return false;
-            }
-            if (jQuery('#error_email').html() != '') {
-                return false;
-            } else {
-                jQuery('#mainbody_contentbody_btnSendEmail').addClass('popup_btn SendSuccess');
-                return true;
-            }
-        }
+      }
+      
+      input[type="text"],
+      input[type="password"] {
+        width: 90%;
+        height: 45px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      input[type="submit"] {
+        background-color: #FFA15F;
+        font-family: 'Poppins', sans-serif;
         
-    </script>
-    
-    <link href="/assets/css/iosOverlay.css" rel="stylesheet" />
-    <script src="/assets/js/iosOverlay.js"></script>
-    <link href="/assets/lib/rateit/rateit.css" rel="stylesheet" />
-    <script src="/assets/lib/rateit/jquery.rateit.min.js"></script>
+        width: 90%;
+        height: 45px;;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      
+      /* Responsive styles */
+      @media screen and (max-width: 600px) {
+        .login-box {
+          max-width: 300px;
+        }
+      }
+      /* Add more leaves by duplicating the .leaf style block and modifying the nth-child and animation-delay values */
+    </style>
+  </head>
+  <body>
+    <div class="leaves-container">
+      <!-- Add 20 leaves to the container -->
+      <div class="leaf"><img src="leave2.png"></div>
+      <div class="leaf"><img src="leave2.png"></div>
+      <div class="leaf"><img src="leave2.png"></div>
+      <div class="leaf"><img src="leave2.png"></div>
+      <br>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
 
+  
+      
+    </div>
 
-</body>
+    <div class="login-box">
+      <h2 style="text-align: center;font-family: 'Poppins', sans-serif;">Sign In</h2>
+      <br>
+      <form>
+        <label for="username"></label>
+        <input type="text" id="username" name="username" placeholder="Username" required >
+      
+        <label for="password"></label>
+        <input type="password" id="password" name="password" placeholder="Password" required >
+      
+        <input type="submit" value="Login">
+      </form>
+      <p style="text-align: left;padding-left: 20px; width: 50%;">Forgot Password </p>
+      <p style="text-align: start;">ss</p>
+      
+    </div>
+  </body>
 </html>
