@@ -2,20 +2,20 @@ body {
   height: 100vh;
   background: radial-gradient(ellipse at center, #0a0025 0%, #000000 100%);
   overflow: hidden;
-  filter: drop-shadow(0 0 10px white);
+  filter: drop-shadow(0 0 10px rgb(206, 177, 177));
 }
 
 .snow {
   position: absolute;
   width: 10px;
   height: 10px;
-  background: white;
+  background: rgb(141, 80, 255);
   border-radius: 50%;
 }
 .snow:nth-child(1) {
   opacity: 0.6064;
   transform: translate(56.5936vw, -10px) scale(0.1606);
-  animation: fall-1 22s -16s linear infinite;
+  animation: fall-1 2s -1s linear infinite;
 }
 @keyframes fall-1 {
   34.585% {
@@ -54,7 +54,7 @@ body {
 .snow:nth-child(4) {
   opacity: 0.7166;
   transform: translate(59.7326vw, -10px) scale(0.0443);
-  animation: fall-4 26s -3s linear infinite;
+  animation: fall-4 13s -2s linear infinite;
 }
 @keyframes fall-4 {
   73% {
